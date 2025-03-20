@@ -1,0 +1,27 @@
+FROM observer-builder AS builder
+
+# Use a base image with necessary build tools
+FROM node:23
+
+
+# Install dependencies
+# RUN apt-get update && apt-get install -y \
+#     build-essential \
+#     libpcre3 libpcre3-dev \
+#     zlib1g zlib1g-dev \
+#     libssl-dev \
+#     wget curl
+
+# install trivy
+ENV TRIVY_VERSION=0.60.0
+RUN wget https://github.com/aquasecurity/trivy/releases/download/v${TRIVY_VERSION}/trivy_${TRIVY_VERSION}_Linux-64bit.deb
+RUN dpkg -i trivy_${TRIVY_VERSION}_Linux-64bit.deb
+
+# setup working directory
+WORKDIR /src
+COPY package.json ./
+
+# install observer cli
+COPY --from=builder /src/observer-cli/observer /usr/local/bin/observer
+RUN chmod +x /usr/local/bin/observer
+

@@ -1,0 +1,2053 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "serialNumber": "urn:uuid:5d649c60-7efa-4774-b24c-73c61a56f4b4",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2025-03-20T16:03:21+00:00",
+    "lifecycles": [
+      {
+        "phase": "build"
+      }
+    ],
+    "tools": {
+      "components": [
+        {
+          "type": "application",
+          "publisher": "https://sbom.observer",
+          "name": "observer",
+          "version": "dev",
+          "externalReferences": [
+            {
+              "url": "https://github.com/sbom-observer/observer-cli",
+              "type": "website"
+            }
+          ]
+        },
+        {
+          "type": "application",
+          "name": "build-observer",
+          "version": "0.1",
+          "externalReferences": [
+            {
+              "url": "https://github.com/sbom-observer/build-observer",
+              "type": "website"
+            }
+          ]
+        },
+        {
+          "type": "application",
+          "group": "aquasecurity",
+          "name": "trivy",
+          "version": "0.60.0"
+        }
+      ]
+    },
+    "component": {
+      "bom-ref": "bd79501a-0acb-4cd1-b21d-722b202414fd",
+      "type": "application",
+      "name": "npm-with-native-dependencies",
+      "version": "1.0.0"
+    }
+  },
+  "components": [
+    {
+      "bom-ref": "pkg:generic/gcc-12@12.2.0",
+      "type": "library",
+      "name": "gcc-12",
+      "version": "12.2.0",
+      "purl": "pkg:generic/gcc-12@12.2.0"
+    },
+    {
+      "bom-ref": "pkg:generic/glibc@2.36",
+      "type": "library",
+      "name": "glibc",
+      "version": "2.36",
+      "purl": "pkg:generic/glibc@2.36"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libc6-dev@2.36-9+deb12u10?arch=amd64\u0026distro=debian-12",
+      "type": "library",
+      "name": "libc6-dev",
+      "version": "2.36-9+deb12u10",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        },
+        {
+          "license": {
+            "id": "ISC"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "HPND"
+          }
+        },
+        {
+          "license": {
+            "id": "Spencer-94"
+          }
+        }
+      ],
+      "purl": "pkg:deb/debian/libc6-dev@2.36-9+deb12u10?arch=amd64\u0026distro=debian-12"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libgcc-12-dev@12.2.0-14?arch=amd64\u0026distro=debian-12",
+      "type": "library",
+      "name": "libgcc-12-dev",
+      "version": "12.2.0-14",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "Artistic-1.0-Perl"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "NCSA"
+          }
+        },
+        {
+          "license": {
+            "id": "MIT"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "Zlib"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-4-Clause-UC"
+          }
+        },
+        {
+          "license": {
+            "id": "HPND"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "Spencer-94"
+          }
+        },
+        {
+          "license": {
+            "id": "Unicode-DFS-2015"
+          }
+        }
+      ],
+      "purl": "pkg:deb/debian/libgcc-12-dev@12.2.0-14?arch=amd64\u0026distro=debian-12"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libstdc++-12-dev@12.2.0-14?arch=amd64\u0026distro=debian-12",
+      "type": "library",
+      "name": "libstdc++-12-dev",
+      "version": "12.2.0-14",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "Artistic-1.0-Perl"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "NCSA"
+          }
+        },
+        {
+          "license": {
+            "id": "MIT"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "Zlib"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-4-Clause-UC"
+          }
+        },
+        {
+          "license": {
+            "id": "HPND"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "Spencer-94"
+          }
+        },
+        {
+          "license": {
+            "id": "Unicode-DFS-2015"
+          }
+        }
+      ],
+      "purl": "pkg:deb/debian/libstdc++-12-dev@12.2.0-14?arch=amd64\u0026distro=debian-12"
+    },
+    {
+      "bom-ref": "pkg:generic/linux@6.1.129",
+      "type": "library",
+      "name": "linux",
+      "version": "6.1.129",
+      "purl": "pkg:generic/linux@6.1.129"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/linux-libc-dev@6.1.129-1?arch=amd64\u0026distro=debian-12",
+      "type": "library",
+      "name": "linux-libc-dev",
+      "version": "6.1.129-1",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        },
+        {
+          "license": {
+            "id": "MIT"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        }
+      ],
+      "purl": "pkg:deb/debian/linux-libc-dev@6.1.129-1?arch=amd64\u0026distro=debian-12"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/binutils-x86-64-linux-gnu@2.40-2?arch=amd64\u0026distro=debian-12",
+      "type": "application",
+      "name": "binutils-x86-64-linux-gnu",
+      "version": "2.40-2",
+      "scope": "excluded",
+      "purl": "pkg:deb/debian/binutils-x86-64-linux-gnu@2.40-2?arch=amd64\u0026distro=debian-12",
+      "properties": [
+        {
+          "name": "observer:build:role",
+          "value": "tool"
+        }
+      ],
+      "components": [
+        {
+          "type": "file",
+          "name": "/usr/bin/x86_64-linux-gnu-ld.bfd",
+          "hashes": [
+            {
+              "alg": "SHA-256",
+              "content": "f6d71a1bcd45764550a42dfaa179bc43b63ee879ec6f875bfd39fca013515da7"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/cpp-12@12.2.0-14?arch=amd64\u0026distro=debian-12",
+      "type": "application",
+      "name": "cpp-12",
+      "version": "12.2.0-14",
+      "scope": "excluded",
+      "purl": "pkg:deb/debian/cpp-12@12.2.0-14?arch=amd64\u0026distro=debian-12",
+      "properties": [
+        {
+          "name": "observer:build:role",
+          "value": "tool"
+        }
+      ],
+      "components": [
+        {
+          "type": "file",
+          "name": "/usr/lib/gcc/x86_64-linux-gnu/12/cc1",
+          "hashes": [
+            {
+              "alg": "SHA-256",
+              "content": "a9d27bdb13cfcae82035677c84a28ad3b35fd5e6b3f5e19060d3ba1a69f3c3fe"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/g++-12@12.2.0-14?arch=amd64\u0026distro=debian-12",
+      "type": "application",
+      "name": "g++-12",
+      "version": "12.2.0-14",
+      "scope": "excluded",
+      "purl": "pkg:deb/debian/g++-12@12.2.0-14?arch=amd64\u0026distro=debian-12",
+      "properties": [
+        {
+          "name": "observer:build:role",
+          "value": "tool"
+        }
+      ],
+      "components": [
+        {
+          "type": "file",
+          "name": "/usr/bin/x86_64-linux-gnu-g++-12",
+          "hashes": [
+            {
+              "alg": "SHA-256",
+              "content": "7f286ca4017ae9052c4233eb4cc129373222a4356088d21e0feed12fc583f3a0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/gcc-12@12.2.0-14?arch=amd64\u0026distro=debian-12",
+      "type": "application",
+      "name": "gcc-12",
+      "version": "12.2.0-14",
+      "scope": "excluded",
+      "purl": "pkg:deb/debian/gcc-12@12.2.0-14?arch=amd64\u0026distro=debian-12",
+      "properties": [
+        {
+          "name": "observer:build:role",
+          "value": "tool"
+        }
+      ],
+      "components": [
+        {
+          "type": "file",
+          "name": "/usr/bin/x86_64-linux-gnu-gcc-12",
+          "hashes": [
+            {
+              "alg": "SHA-256",
+              "content": "000991b4aae03aed6179cee7e5df081190f403e172ac7fc7e66c76bbde563a16"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/binutils@2.40-2?arch=amd64\u0026distro=debian-12",
+      "type": "library",
+      "name": "binutils",
+      "version": "2.40-2",
+      "scope": "excluded",
+      "purl": "pkg:deb/debian/binutils@2.40-2?arch=amd64\u0026distro=debian-12"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/binutils-common@2.40-2?arch=amd64\u0026distro=debian-12",
+      "type": "library",
+      "name": "binutils-common",
+      "version": "2.40-2",
+      "scope": "excluded",
+      "purl": "pkg:deb/debian/binutils-common@2.40-2?arch=amd64\u0026distro=debian-12"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/gcc-12-base@12.2.0-14?arch=amd64\u0026distro=debian-12",
+      "type": "library",
+      "name": "gcc-12-base",
+      "version": "12.2.0-14",
+      "purl": "pkg:deb/debian/gcc-12-base@12.2.0-14?arch=amd64\u0026distro=debian-12"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libasan8@12.2.0-14?arch=amd64\u0026distro=debian-12",
+      "type": "library",
+      "name": "libasan8",
+      "version": "12.2.0-14",
+      "purl": "pkg:deb/debian/libasan8@12.2.0-14?arch=amd64\u0026distro=debian-12"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libatomic1@12.2.0-14?arch=amd64\u0026distro=debian-12",
+      "type": "library",
+      "name": "libatomic1",
+      "version": "12.2.0-14",
+      "purl": "pkg:deb/debian/libatomic1@12.2.0-14?arch=amd64\u0026distro=debian-12"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libbinutils@2.40-2?arch=amd64\u0026distro=debian-12",
+      "type": "library",
+      "name": "libbinutils",
+      "version": "2.40-2",
+      "scope": "excluded",
+      "purl": "pkg:deb/debian/libbinutils@2.40-2?arch=amd64\u0026distro=debian-12"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libc-dev-bin@2.36-9+deb12u10?arch=amd64\u0026distro=debian-12",
+      "type": "library",
+      "name": "libc-dev-bin",
+      "version": "2.36-9+deb12u10",
+      "purl": "pkg:deb/debian/libc-dev-bin@2.36-9+deb12u10?arch=amd64\u0026distro=debian-12"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libc6@2.36-9+deb12u10?arch=amd64\u0026distro=debian-12",
+      "type": "library",
+      "name": "libc6",
+      "version": "2.36-9+deb12u10",
+      "purl": "pkg:deb/debian/libc6@2.36-9+deb12u10?arch=amd64\u0026distro=debian-12"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libcc1-0@12.2.0-14?arch=amd64\u0026distro=debian-12",
+      "type": "library",
+      "name": "libcc1-0",
+      "version": "12.2.0-14",
+      "scope": "excluded",
+      "purl": "pkg:deb/debian/libcc1-0@12.2.0-14?arch=amd64\u0026distro=debian-12"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libcom-err2@1.47.0-2?arch=amd64\u0026distro=debian-12",
+      "type": "library",
+      "name": "libcom-err2",
+      "version": "1.47.0-2",
+      "purl": "pkg:deb/debian/libcom-err2@1.47.0-2?arch=amd64\u0026distro=debian-12"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libcrypt-dev@1:4.4.33-2?arch=amd64\u0026distro=debian-12",
+      "type": "library",
+      "name": "libcrypt-dev",
+      "version": "1:4.4.33-2",
+      "purl": "pkg:deb/debian/libcrypt-dev@1:4.4.33-2?arch=amd64\u0026distro=debian-12"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libcrypt1@1:4.4.33-2?arch=amd64\u0026distro=debian-12",
+      "type": "library",
+      "name": "libcrypt1",
+      "version": "1:4.4.33-2",
+      "purl": "pkg:deb/debian/libcrypt1@1:4.4.33-2?arch=amd64\u0026distro=debian-12"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libctf-nobfd0@2.40-2?arch=amd64\u0026distro=debian-12",
+      "type": "library",
+      "name": "libctf-nobfd0",
+      "version": "2.40-2",
+      "scope": "excluded",
+      "purl": "pkg:deb/debian/libctf-nobfd0@2.40-2?arch=amd64\u0026distro=debian-12"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libctf0@2.40-2?arch=amd64\u0026distro=debian-12",
+      "type": "library",
+      "name": "libctf0",
+      "version": "2.40-2",
+      "scope": "excluded",
+      "purl": "pkg:deb/debian/libctf0@2.40-2?arch=amd64\u0026distro=debian-12"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libgcc-s1@12.2.0-14?arch=amd64\u0026distro=debian-12",
+      "type": "library",
+      "name": "libgcc-s1",
+      "version": "12.2.0-14",
+      "purl": "pkg:deb/debian/libgcc-s1@12.2.0-14?arch=amd64\u0026distro=debian-12"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libgmp10@2:6.2.1+dfsg1-1.1?arch=amd64\u0026distro=debian-12",
+      "type": "library",
+      "name": "libgmp10",
+      "version": "2:6.2.1+dfsg1-1.1",
+      "scope": "excluded",
+      "purl": "pkg:deb/debian/libgmp10@2:6.2.1+dfsg1-1.1?arch=amd64\u0026distro=debian-12"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libgomp1@12.2.0-14?arch=amd64\u0026distro=debian-12",
+      "type": "library",
+      "name": "libgomp1",
+      "version": "12.2.0-14",
+      "purl": "pkg:deb/debian/libgomp1@12.2.0-14?arch=amd64\u0026distro=debian-12"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libgprofng0@2.40-2?arch=amd64\u0026distro=debian-12",
+      "type": "library",
+      "name": "libgprofng0",
+      "version": "2.40-2",
+      "scope": "excluded",
+      "purl": "pkg:deb/debian/libgprofng0@2.40-2?arch=amd64\u0026distro=debian-12"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libgssapi-krb5-2@1.20.1-2+deb12u2?arch=amd64\u0026distro=debian-12",
+      "type": "library",
+      "name": "libgssapi-krb5-2",
+      "version": "1.20.1-2+deb12u2",
+      "purl": "pkg:deb/debian/libgssapi-krb5-2@1.20.1-2+deb12u2?arch=amd64\u0026distro=debian-12"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libisl23@0.25-1.1?arch=amd64\u0026distro=debian-12",
+      "type": "library",
+      "name": "libisl23",
+      "version": "0.25-1.1",
+      "scope": "excluded",
+      "purl": "pkg:deb/debian/libisl23@0.25-1.1?arch=amd64\u0026distro=debian-12"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libitm1@12.2.0-14?arch=amd64\u0026distro=debian-12",
+      "type": "library",
+      "name": "libitm1",
+      "version": "12.2.0-14",
+      "purl": "pkg:deb/debian/libitm1@12.2.0-14?arch=amd64\u0026distro=debian-12"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libjansson4@2.14-2?arch=amd64\u0026distro=debian-12",
+      "type": "library",
+      "name": "libjansson4",
+      "version": "2.14-2",
+      "scope": "excluded",
+      "purl": "pkg:deb/debian/libjansson4@2.14-2?arch=amd64\u0026distro=debian-12"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libk5crypto3@1.20.1-2+deb12u2?arch=amd64\u0026distro=debian-12",
+      "type": "library",
+      "name": "libk5crypto3",
+      "version": "1.20.1-2+deb12u2",
+      "purl": "pkg:deb/debian/libk5crypto3@1.20.1-2+deb12u2?arch=amd64\u0026distro=debian-12"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libkeyutils1@1.6.3-2?arch=amd64\u0026distro=debian-12",
+      "type": "library",
+      "name": "libkeyutils1",
+      "version": "1.6.3-2",
+      "purl": "pkg:deb/debian/libkeyutils1@1.6.3-2?arch=amd64\u0026distro=debian-12"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libkrb5-3@1.20.1-2+deb12u2?arch=amd64\u0026distro=debian-12",
+      "type": "library",
+      "name": "libkrb5-3",
+      "version": "1.20.1-2+deb12u2",
+      "purl": "pkg:deb/debian/libkrb5-3@1.20.1-2+deb12u2?arch=amd64\u0026distro=debian-12"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libkrb5support0@1.20.1-2+deb12u2?arch=amd64\u0026distro=debian-12",
+      "type": "library",
+      "name": "libkrb5support0",
+      "version": "1.20.1-2+deb12u2",
+      "purl": "pkg:deb/debian/libkrb5support0@1.20.1-2+deb12u2?arch=amd64\u0026distro=debian-12"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/liblsan0@12.2.0-14?arch=amd64\u0026distro=debian-12",
+      "type": "library",
+      "name": "liblsan0",
+      "version": "12.2.0-14",
+      "purl": "pkg:deb/debian/liblsan0@12.2.0-14?arch=amd64\u0026distro=debian-12"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libmpc3@1.3.1-1?arch=amd64\u0026distro=debian-12",
+      "type": "library",
+      "name": "libmpc3",
+      "version": "1.3.1-1",
+      "scope": "excluded",
+      "purl": "pkg:deb/debian/libmpc3@1.3.1-1?arch=amd64\u0026distro=debian-12"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libmpfr6@4.2.0-1?arch=amd64\u0026distro=debian-12",
+      "type": "library",
+      "name": "libmpfr6",
+      "version": "4.2.0-1",
+      "scope": "excluded",
+      "purl": "pkg:deb/debian/libmpfr6@4.2.0-1?arch=amd64\u0026distro=debian-12"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libnsl-dev@1.3.0-2?arch=amd64\u0026distro=debian-12",
+      "type": "library",
+      "name": "libnsl-dev",
+      "version": "1.3.0-2",
+      "purl": "pkg:deb/debian/libnsl-dev@1.3.0-2?arch=amd64\u0026distro=debian-12"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libnsl2@1.3.0-2?arch=amd64\u0026distro=debian-12",
+      "type": "library",
+      "name": "libnsl2",
+      "version": "1.3.0-2",
+      "purl": "pkg:deb/debian/libnsl2@1.3.0-2?arch=amd64\u0026distro=debian-12"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libquadmath0@12.2.0-14?arch=amd64\u0026distro=debian-12",
+      "type": "library",
+      "name": "libquadmath0",
+      "version": "12.2.0-14",
+      "purl": "pkg:deb/debian/libquadmath0@12.2.0-14?arch=amd64\u0026distro=debian-12"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libssl3@3.0.15-1~deb12u1?arch=amd64\u0026distro=debian-12",
+      "type": "library",
+      "name": "libssl3",
+      "version": "3.0.15-1~deb12u1",
+      "purl": "pkg:deb/debian/libssl3@3.0.15-1~deb12u1?arch=amd64\u0026distro=debian-12"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libstdc++6@12.2.0-14?arch=amd64\u0026distro=debian-12",
+      "type": "library",
+      "name": "libstdc++6",
+      "version": "12.2.0-14",
+      "purl": "pkg:deb/debian/libstdc++6@12.2.0-14?arch=amd64\u0026distro=debian-12"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libtirpc-common@1.3.3+ds-1?arch=all\u0026distro=debian-12",
+      "type": "library",
+      "name": "libtirpc-common",
+      "version": "1.3.3+ds-1",
+      "purl": "pkg:deb/debian/libtirpc-common@1.3.3+ds-1?arch=all\u0026distro=debian-12"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libtirpc-dev@1.3.3+ds-1?arch=amd64\u0026distro=debian-12",
+      "type": "library",
+      "name": "libtirpc-dev",
+      "version": "1.3.3+ds-1",
+      "purl": "pkg:deb/debian/libtirpc-dev@1.3.3+ds-1?arch=amd64\u0026distro=debian-12"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libtirpc3@1.3.3+ds-1?arch=amd64\u0026distro=debian-12",
+      "type": "library",
+      "name": "libtirpc3",
+      "version": "1.3.3+ds-1",
+      "purl": "pkg:deb/debian/libtirpc3@1.3.3+ds-1?arch=amd64\u0026distro=debian-12"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libtsan2@12.2.0-14?arch=amd64\u0026distro=debian-12",
+      "type": "library",
+      "name": "libtsan2",
+      "version": "12.2.0-14",
+      "purl": "pkg:deb/debian/libtsan2@12.2.0-14?arch=amd64\u0026distro=debian-12"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libubsan1@12.2.0-14?arch=amd64\u0026distro=debian-12",
+      "type": "library",
+      "name": "libubsan1",
+      "version": "12.2.0-14",
+      "purl": "pkg:deb/debian/libubsan1@12.2.0-14?arch=amd64\u0026distro=debian-12"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libzstd1@1.5.4+dfsg2-5?arch=amd64\u0026distro=debian-12",
+      "type": "library",
+      "name": "libzstd1",
+      "version": "1.5.4+dfsg2-5",
+      "scope": "excluded",
+      "purl": "pkg:deb/debian/libzstd1@1.5.4+dfsg2-5?arch=amd64\u0026distro=debian-12"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/rpcsvc-proto@1.4.3-1?arch=amd64\u0026distro=debian-12",
+      "type": "library",
+      "name": "rpcsvc-proto",
+      "version": "1.4.3-1",
+      "purl": "pkg:deb/debian/rpcsvc-proto@1.4.3-1?arch=amd64\u0026distro=debian-12"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/zlib1g@1:1.2.13.dfsg-1?arch=amd64\u0026distro=debian-12",
+      "type": "library",
+      "name": "zlib1g",
+      "version": "1:1.2.13.dfsg-1",
+      "scope": "excluded",
+      "purl": "pkg:deb/debian/zlib1g@1:1.2.13.dfsg-1?arch=amd64\u0026distro=debian-12"
+    },
+    {
+      "bom-ref": "ca331c48-b488-4c53-ac96-70f577f0e647",
+      "type": "application",
+      "name": "package-lock.json"
+    },
+    {
+      "bom-ref": "pkg:npm/%40mapbox/node-pre-gyp@1.0.11",
+      "type": "library",
+      "group": "@mapbox",
+      "name": "node-pre-gyp",
+      "version": "1.0.11",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-3-Clause"
+          }
+        }
+      ],
+      "purl": "pkg:npm/%40mapbox/node-pre-gyp@1.0.11"
+    },
+    {
+      "bom-ref": "pkg:npm/abbrev@1.1.1",
+      "type": "library",
+      "name": "abbrev",
+      "version": "1.1.1",
+      "licenses": [
+        {
+          "license": {
+            "name": "ISC"
+          }
+        }
+      ],
+      "purl": "pkg:npm/abbrev@1.1.1"
+    },
+    {
+      "bom-ref": "pkg:npm/agent-base@6.0.2",
+      "type": "library",
+      "name": "agent-base",
+      "version": "6.0.2",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/agent-base@6.0.2"
+    },
+    {
+      "bom-ref": "pkg:npm/ansi-regex@5.0.1",
+      "type": "library",
+      "name": "ansi-regex",
+      "version": "5.0.1",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/ansi-regex@5.0.1"
+    },
+    {
+      "bom-ref": "pkg:npm/aproba@2.0.0",
+      "type": "library",
+      "name": "aproba",
+      "version": "2.0.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "ISC"
+          }
+        }
+      ],
+      "purl": "pkg:npm/aproba@2.0.0"
+    },
+    {
+      "bom-ref": "pkg:npm/are-we-there-yet@2.0.0",
+      "type": "library",
+      "name": "are-we-there-yet",
+      "version": "2.0.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "ISC"
+          }
+        }
+      ],
+      "purl": "pkg:npm/are-we-there-yet@2.0.0"
+    },
+    {
+      "bom-ref": "pkg:npm/balanced-match@1.0.2",
+      "type": "library",
+      "name": "balanced-match",
+      "version": "1.0.2",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/balanced-match@1.0.2"
+    },
+    {
+      "bom-ref": "pkg:npm/bcrypt@5.1.1",
+      "type": "library",
+      "name": "bcrypt",
+      "version": "5.1.1",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/bcrypt@5.1.1"
+    },
+    {
+      "bom-ref": "pkg:npm/brace-expansion@1.1.11",
+      "type": "library",
+      "name": "brace-expansion",
+      "version": "1.1.11",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/brace-expansion@1.1.11"
+    },
+    {
+      "bom-ref": "pkg:npm/chownr@2.0.0",
+      "type": "library",
+      "name": "chownr",
+      "version": "2.0.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "ISC"
+          }
+        }
+      ],
+      "purl": "pkg:npm/chownr@2.0.0"
+    },
+    {
+      "bom-ref": "pkg:npm/color-support@1.1.3",
+      "type": "library",
+      "name": "color-support",
+      "version": "1.1.3",
+      "licenses": [
+        {
+          "license": {
+            "name": "ISC"
+          }
+        }
+      ],
+      "purl": "pkg:npm/color-support@1.1.3"
+    },
+    {
+      "bom-ref": "pkg:npm/concat-map@0.0.1",
+      "type": "library",
+      "name": "concat-map",
+      "version": "0.0.1",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/concat-map@0.0.1"
+    },
+    {
+      "bom-ref": "pkg:npm/console-control-strings@1.1.0",
+      "type": "library",
+      "name": "console-control-strings",
+      "version": "1.1.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "ISC"
+          }
+        }
+      ],
+      "purl": "pkg:npm/console-control-strings@1.1.0"
+    },
+    {
+      "bom-ref": "pkg:npm/debug@4.4.0",
+      "type": "library",
+      "name": "debug",
+      "version": "4.4.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/debug@4.4.0"
+    },
+    {
+      "bom-ref": "pkg:npm/delegates@1.0.0",
+      "type": "library",
+      "name": "delegates",
+      "version": "1.0.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/delegates@1.0.0"
+    },
+    {
+      "bom-ref": "pkg:npm/detect-libc@2.0.3",
+      "type": "library",
+      "name": "detect-libc",
+      "version": "2.0.3",
+      "licenses": [
+        {
+          "license": {
+            "name": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:npm/detect-libc@2.0.3"
+    },
+    {
+      "bom-ref": "pkg:npm/emoji-regex@8.0.0",
+      "type": "library",
+      "name": "emoji-regex",
+      "version": "8.0.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/emoji-regex@8.0.0"
+    },
+    {
+      "bom-ref": "pkg:npm/fs-minipass@2.1.0",
+      "type": "library",
+      "name": "fs-minipass",
+      "version": "2.1.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "ISC"
+          }
+        }
+      ],
+      "purl": "pkg:npm/fs-minipass@2.1.0"
+    },
+    {
+      "bom-ref": "pkg:npm/fs.realpath@1.0.0",
+      "type": "library",
+      "name": "fs.realpath",
+      "version": "1.0.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "ISC"
+          }
+        }
+      ],
+      "purl": "pkg:npm/fs.realpath@1.0.0"
+    },
+    {
+      "bom-ref": "pkg:npm/gauge@3.0.2",
+      "type": "library",
+      "name": "gauge",
+      "version": "3.0.2",
+      "licenses": [
+        {
+          "license": {
+            "name": "ISC"
+          }
+        }
+      ],
+      "purl": "pkg:npm/gauge@3.0.2"
+    },
+    {
+      "bom-ref": "pkg:npm/glob@7.2.3",
+      "type": "library",
+      "name": "glob",
+      "version": "7.2.3",
+      "licenses": [
+        {
+          "license": {
+            "name": "ISC"
+          }
+        }
+      ],
+      "purl": "pkg:npm/glob@7.2.3"
+    },
+    {
+      "bom-ref": "pkg:npm/has-unicode@2.0.1",
+      "type": "library",
+      "name": "has-unicode",
+      "version": "2.0.1",
+      "licenses": [
+        {
+          "license": {
+            "name": "ISC"
+          }
+        }
+      ],
+      "purl": "pkg:npm/has-unicode@2.0.1"
+    },
+    {
+      "bom-ref": "pkg:npm/https-proxy-agent@5.0.1",
+      "type": "library",
+      "name": "https-proxy-agent",
+      "version": "5.0.1",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/https-proxy-agent@5.0.1"
+    },
+    {
+      "bom-ref": "pkg:npm/inflight@1.0.6",
+      "type": "library",
+      "name": "inflight",
+      "version": "1.0.6",
+      "licenses": [
+        {
+          "license": {
+            "name": "ISC"
+          }
+        }
+      ],
+      "purl": "pkg:npm/inflight@1.0.6"
+    },
+    {
+      "bom-ref": "pkg:npm/inherits@2.0.4",
+      "type": "library",
+      "name": "inherits",
+      "version": "2.0.4",
+      "licenses": [
+        {
+          "license": {
+            "name": "ISC"
+          }
+        }
+      ],
+      "purl": "pkg:npm/inherits@2.0.4"
+    },
+    {
+      "bom-ref": "pkg:npm/is-fullwidth-code-point@3.0.0",
+      "type": "library",
+      "name": "is-fullwidth-code-point",
+      "version": "3.0.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/is-fullwidth-code-point@3.0.0"
+    },
+    {
+      "bom-ref": "pkg:npm/leftpad@0.0.1",
+      "type": "library",
+      "name": "leftpad",
+      "version": "0.0.1",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-3-Clause"
+          }
+        }
+      ],
+      "purl": "pkg:npm/leftpad@0.0.1"
+    },
+    {
+      "bom-ref": "pkg:npm/make-dir@3.1.0",
+      "type": "library",
+      "name": "make-dir",
+      "version": "3.1.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/make-dir@3.1.0"
+    },
+    {
+      "bom-ref": "pkg:npm/minimatch@3.1.2",
+      "type": "library",
+      "name": "minimatch",
+      "version": "3.1.2",
+      "licenses": [
+        {
+          "license": {
+            "name": "ISC"
+          }
+        }
+      ],
+      "purl": "pkg:npm/minimatch@3.1.2"
+    },
+    {
+      "bom-ref": "pkg:npm/minipass@3.3.6",
+      "type": "library",
+      "name": "minipass",
+      "version": "3.3.6",
+      "licenses": [
+        {
+          "license": {
+            "name": "ISC"
+          }
+        }
+      ],
+      "purl": "pkg:npm/minipass@3.3.6"
+    },
+    {
+      "bom-ref": "pkg:npm/minipass@5.0.0",
+      "type": "library",
+      "name": "minipass",
+      "version": "5.0.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "ISC"
+          }
+        }
+      ],
+      "purl": "pkg:npm/minipass@5.0.0"
+    },
+    {
+      "bom-ref": "pkg:npm/minizlib@2.1.2",
+      "type": "library",
+      "name": "minizlib",
+      "version": "2.1.2",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/minizlib@2.1.2"
+    },
+    {
+      "bom-ref": "pkg:npm/mkdirp@1.0.4",
+      "type": "library",
+      "name": "mkdirp",
+      "version": "1.0.4",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/mkdirp@1.0.4"
+    },
+    {
+      "bom-ref": "pkg:npm/ms@2.1.3",
+      "type": "library",
+      "name": "ms",
+      "version": "2.1.3",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/ms@2.1.3"
+    },
+    {
+      "bom-ref": "pkg:npm/node-addon-api@5.1.0",
+      "type": "library",
+      "name": "node-addon-api",
+      "version": "5.1.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/node-addon-api@5.1.0"
+    },
+    {
+      "bom-ref": "pkg:npm/node-fetch@2.7.0",
+      "type": "library",
+      "name": "node-fetch",
+      "version": "2.7.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/node-fetch@2.7.0"
+    },
+    {
+      "bom-ref": "pkg:npm/nopt@5.0.0",
+      "type": "library",
+      "name": "nopt",
+      "version": "5.0.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "ISC"
+          }
+        }
+      ],
+      "purl": "pkg:npm/nopt@5.0.0"
+    },
+    {
+      "bom-ref": "pkg:npm/npmlog@5.0.1",
+      "type": "library",
+      "name": "npmlog",
+      "version": "5.0.1",
+      "licenses": [
+        {
+          "license": {
+            "name": "ISC"
+          }
+        }
+      ],
+      "purl": "pkg:npm/npmlog@5.0.1"
+    },
+    {
+      "bom-ref": "pkg:npm/object-assign@4.1.1",
+      "type": "library",
+      "name": "object-assign",
+      "version": "4.1.1",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/object-assign@4.1.1"
+    },
+    {
+      "bom-ref": "pkg:npm/once@1.4.0",
+      "type": "library",
+      "name": "once",
+      "version": "1.4.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "ISC"
+          }
+        }
+      ],
+      "purl": "pkg:npm/once@1.4.0"
+    },
+    {
+      "bom-ref": "pkg:npm/path-is-absolute@1.0.1",
+      "type": "library",
+      "name": "path-is-absolute",
+      "version": "1.0.1",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/path-is-absolute@1.0.1"
+    },
+    {
+      "bom-ref": "pkg:npm/readable-stream@3.6.2",
+      "type": "library",
+      "name": "readable-stream",
+      "version": "3.6.2",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/readable-stream@3.6.2"
+    },
+    {
+      "bom-ref": "pkg:npm/rimraf@3.0.2",
+      "type": "library",
+      "name": "rimraf",
+      "version": "3.0.2",
+      "licenses": [
+        {
+          "license": {
+            "name": "ISC"
+          }
+        }
+      ],
+      "purl": "pkg:npm/rimraf@3.0.2"
+    },
+    {
+      "bom-ref": "pkg:npm/safe-buffer@5.2.1",
+      "type": "library",
+      "name": "safe-buffer",
+      "version": "5.2.1",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/safe-buffer@5.2.1"
+    },
+    {
+      "bom-ref": "pkg:npm/semver@6.3.1",
+      "type": "library",
+      "name": "semver",
+      "version": "6.3.1",
+      "licenses": [
+        {
+          "license": {
+            "name": "ISC"
+          }
+        }
+      ],
+      "purl": "pkg:npm/semver@6.3.1"
+    },
+    {
+      "bom-ref": "pkg:npm/semver@7.7.1",
+      "type": "library",
+      "name": "semver",
+      "version": "7.7.1",
+      "licenses": [
+        {
+          "license": {
+            "name": "ISC"
+          }
+        }
+      ],
+      "purl": "pkg:npm/semver@7.7.1"
+    },
+    {
+      "bom-ref": "pkg:npm/set-blocking@2.0.0",
+      "type": "library",
+      "name": "set-blocking",
+      "version": "2.0.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "ISC"
+          }
+        }
+      ],
+      "purl": "pkg:npm/set-blocking@2.0.0"
+    },
+    {
+      "bom-ref": "pkg:npm/signal-exit@3.0.7",
+      "type": "library",
+      "name": "signal-exit",
+      "version": "3.0.7",
+      "licenses": [
+        {
+          "license": {
+            "name": "ISC"
+          }
+        }
+      ],
+      "purl": "pkg:npm/signal-exit@3.0.7"
+    },
+    {
+      "bom-ref": "pkg:npm/string-width@4.2.3",
+      "type": "library",
+      "name": "string-width",
+      "version": "4.2.3",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/string-width@4.2.3"
+    },
+    {
+      "bom-ref": "pkg:npm/string_decoder@1.3.0",
+      "type": "library",
+      "name": "string_decoder",
+      "version": "1.3.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/string_decoder@1.3.0"
+    },
+    {
+      "bom-ref": "pkg:npm/strip-ansi@6.0.1",
+      "type": "library",
+      "name": "strip-ansi",
+      "version": "6.0.1",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/strip-ansi@6.0.1"
+    },
+    {
+      "bom-ref": "pkg:npm/tar@6.2.1",
+      "type": "library",
+      "name": "tar",
+      "version": "6.2.1",
+      "licenses": [
+        {
+          "license": {
+            "name": "ISC"
+          }
+        }
+      ],
+      "purl": "pkg:npm/tar@6.2.1"
+    },
+    {
+      "bom-ref": "pkg:npm/tr46@0.0.3",
+      "type": "library",
+      "name": "tr46",
+      "version": "0.0.3",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/tr46@0.0.3"
+    },
+    {
+      "bom-ref": "pkg:npm/util-deprecate@1.0.2",
+      "type": "library",
+      "name": "util-deprecate",
+      "version": "1.0.2",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/util-deprecate@1.0.2"
+    },
+    {
+      "bom-ref": "pkg:npm/webidl-conversions@3.0.1",
+      "type": "library",
+      "name": "webidl-conversions",
+      "version": "3.0.1",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-2-Clause"
+          }
+        }
+      ],
+      "purl": "pkg:npm/webidl-conversions@3.0.1"
+    },
+    {
+      "bom-ref": "pkg:npm/whatwg-url@5.0.0",
+      "type": "library",
+      "name": "whatwg-url",
+      "version": "5.0.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/whatwg-url@5.0.0"
+    },
+    {
+      "bom-ref": "pkg:npm/wide-align@1.1.5",
+      "type": "library",
+      "name": "wide-align",
+      "version": "1.1.5",
+      "licenses": [
+        {
+          "license": {
+            "name": "ISC"
+          }
+        }
+      ],
+      "purl": "pkg:npm/wide-align@1.1.5"
+    },
+    {
+      "bom-ref": "pkg:npm/wrappy@1.0.2",
+      "type": "library",
+      "name": "wrappy",
+      "version": "1.0.2",
+      "licenses": [
+        {
+          "license": {
+            "name": "ISC"
+          }
+        }
+      ],
+      "purl": "pkg:npm/wrappy@1.0.2"
+    },
+    {
+      "bom-ref": "pkg:npm/yallist@4.0.0",
+      "type": "library",
+      "name": "yallist",
+      "version": "4.0.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "ISC"
+          }
+        }
+      ],
+      "purl": "pkg:npm/yallist@4.0.0"
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "pkg:deb/debian/libc6-dev@2.36-9+deb12u10?arch=amd64\u0026distro=debian-12",
+      "dependsOn": [
+        "pkg:deb/debian/libc-dev-bin@2.36-9+deb12u10?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/linux-libc-dev@6.1.129-1?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/libcrypt-dev@1:4.4.33-2?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/libnsl-dev@1.3.0-2?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/rpcsvc-proto@1.4.3-1?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/libc6@2.36-9+deb12u10?arch=amd64\u0026distro=debian-12"
+      ]
+    },
+    {
+      "ref": "pkg:deb/debian/libgcc-12-dev@12.2.0-14?arch=amd64\u0026distro=debian-12",
+      "dependsOn": [
+        "pkg:deb/debian/libtsan2@12.2.0-14?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/libubsan1@12.2.0-14?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/libasan8@12.2.0-14?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/libitm1@12.2.0-14?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/libquadmath0@12.2.0-14?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/libgcc-s1@12.2.0-14?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/libgomp1@12.2.0-14?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/gcc-12-base@12.2.0-14?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/libatomic1@12.2.0-14?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/liblsan0@12.2.0-14?arch=amd64\u0026distro=debian-12"
+      ]
+    },
+    {
+      "ref": "pkg:deb/debian/libstdc++-12-dev@12.2.0-14?arch=amd64\u0026distro=debian-12",
+      "dependsOn": [
+        "pkg:deb/debian/gcc-12-base@12.2.0-14?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/libgcc-12-dev@12.2.0-14?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/libstdc++6@12.2.0-14?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/libc6-dev@2.36-9+deb12u10?arch=amd64\u0026distro=debian-12"
+      ]
+    },
+    {
+      "ref": "pkg:deb/debian/binutils-x86-64-linux-gnu@2.40-2?arch=amd64\u0026distro=debian-12",
+      "dependsOn": [
+        "pkg:deb/debian/binutils-common@2.40-2?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/libbinutils@2.40-2?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/libc6@2.36-9+deb12u10?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/libjansson4@2.14-2?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/zlib1g@1:1.2.13.dfsg-1?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/libctf-nobfd0@2.40-2?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/libgcc-s1@12.2.0-14?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/libstdc++6@12.2.0-14?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/libzstd1@1.5.4+dfsg2-5?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/libctf0@2.40-2?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/libgprofng0@2.40-2?arch=amd64\u0026distro=debian-12"
+      ]
+    },
+    {
+      "ref": "pkg:deb/debian/cpp-12@12.2.0-14?arch=amd64\u0026distro=debian-12",
+      "dependsOn": [
+        "pkg:deb/debian/libgmp10@2:6.2.1+dfsg1-1.1?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/libisl23@0.25-1.1?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/libmpc3@1.3.1-1?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/libmpfr6@4.2.0-1?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/libzstd1@1.5.4+dfsg2-5?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/zlib1g@1:1.2.13.dfsg-1?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/gcc-12-base@12.2.0-14?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/libc6@2.36-9+deb12u10?arch=amd64\u0026distro=debian-12"
+      ]
+    },
+    {
+      "ref": "pkg:deb/debian/g++-12@12.2.0-14?arch=amd64\u0026distro=debian-12",
+      "dependsOn": [
+        "pkg:deb/debian/libisl23@0.25-1.1?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/gcc-12-base@12.2.0-14?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/libmpc3@1.3.1-1?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/gcc-12@12.2.0-14?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/libc6@2.36-9+deb12u10?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/zlib1g@1:1.2.13.dfsg-1?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/libgmp10@2:6.2.1+dfsg1-1.1?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/libmpfr6@4.2.0-1?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/libstdc++-12-dev@12.2.0-14?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/libzstd1@1.5.4+dfsg2-5?arch=amd64\u0026distro=debian-12"
+      ]
+    },
+    {
+      "ref": "pkg:deb/debian/gcc-12@12.2.0-14?arch=amd64\u0026distro=debian-12",
+      "dependsOn": [
+        "pkg:deb/debian/libmpc3@1.3.1-1?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/binutils@2.40-2?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/libisl23@0.25-1.1?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/libmpfr6@4.2.0-1?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/libstdc++6@12.2.0-14?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/gcc-12-base@12.2.0-14?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/libgcc-12-dev@12.2.0-14?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/libgcc-s1@12.2.0-14?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/cpp-12@12.2.0-14?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/libcc1-0@12.2.0-14?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/libc6@2.36-9+deb12u10?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/libgmp10@2:6.2.1+dfsg1-1.1?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/libzstd1@1.5.4+dfsg2-5?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/zlib1g@1:1.2.13.dfsg-1?arch=amd64\u0026distro=debian-12"
+      ]
+    },
+    {
+      "ref": "bd79501a-0acb-4cd1-b21d-722b202414fd",
+      "dependsOn": [
+        "pkg:deb/debian/libc6-dev@2.36-9+deb12u10?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/libgcc-12-dev@12.2.0-14?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/libstdc++-12-dev@12.2.0-14?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/linux-libc-dev@6.1.129-1?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/binutils-x86-64-linux-gnu@2.40-2?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/cpp-12@12.2.0-14?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/g++-12@12.2.0-14?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/gcc-12@12.2.0-14?arch=amd64\u0026distro=debian-12",
+        "ca331c48-b488-4c53-ac96-70f577f0e647"
+      ]
+    },
+    {
+      "ref": "ca331c48-b488-4c53-ac96-70f577f0e647",
+      "dependsOn": [
+        "pkg:npm/bcrypt@5.1.1",
+        "pkg:npm/leftpad@0.0.1"
+      ]
+    },
+    {
+      "ref": "pkg:npm/%40mapbox/node-pre-gyp@1.0.11",
+      "dependsOn": [
+        "pkg:npm/detect-libc@2.0.3",
+        "pkg:npm/https-proxy-agent@5.0.1",
+        "pkg:npm/make-dir@3.1.0",
+        "pkg:npm/node-fetch@2.7.0",
+        "pkg:npm/nopt@5.0.0",
+        "pkg:npm/npmlog@5.0.1",
+        "pkg:npm/rimraf@3.0.2",
+        "pkg:npm/semver@7.7.1",
+        "pkg:npm/tar@6.2.1"
+      ]
+    },
+    {
+      "ref": "pkg:npm/abbrev@1.1.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/agent-base@6.0.2",
+      "dependsOn": [
+        "pkg:npm/debug@4.4.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/ansi-regex@5.0.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/aproba@2.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/are-we-there-yet@2.0.0",
+      "dependsOn": [
+        "pkg:npm/delegates@1.0.0",
+        "pkg:npm/readable-stream@3.6.2"
+      ]
+    },
+    {
+      "ref": "pkg:npm/balanced-match@1.0.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/bcrypt@5.1.1",
+      "dependsOn": [
+        "pkg:npm/%40mapbox/node-pre-gyp@1.0.11",
+        "pkg:npm/node-addon-api@5.1.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/brace-expansion@1.1.11",
+      "dependsOn": [
+        "pkg:npm/balanced-match@1.0.2",
+        "pkg:npm/concat-map@0.0.1"
+      ]
+    },
+    {
+      "ref": "pkg:npm/chownr@2.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/color-support@1.1.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/concat-map@0.0.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/console-control-strings@1.1.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/debug@4.4.0",
+      "dependsOn": [
+        "pkg:npm/ms@2.1.3"
+      ]
+    },
+    {
+      "ref": "pkg:npm/delegates@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/detect-libc@2.0.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/emoji-regex@8.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/fs-minipass@2.1.0",
+      "dependsOn": [
+        "pkg:npm/minipass@3.3.6"
+      ]
+    },
+    {
+      "ref": "pkg:npm/fs.realpath@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/gauge@3.0.2",
+      "dependsOn": [
+        "pkg:npm/aproba@2.0.0",
+        "pkg:npm/color-support@1.1.3",
+        "pkg:npm/console-control-strings@1.1.0",
+        "pkg:npm/has-unicode@2.0.1",
+        "pkg:npm/object-assign@4.1.1",
+        "pkg:npm/signal-exit@3.0.7",
+        "pkg:npm/string-width@4.2.3",
+        "pkg:npm/strip-ansi@6.0.1",
+        "pkg:npm/wide-align@1.1.5"
+      ]
+    },
+    {
+      "ref": "pkg:npm/glob@7.2.3",
+      "dependsOn": [
+        "pkg:npm/fs.realpath@1.0.0",
+        "pkg:npm/inflight@1.0.6",
+        "pkg:npm/inherits@2.0.4",
+        "pkg:npm/minimatch@3.1.2",
+        "pkg:npm/once@1.4.0",
+        "pkg:npm/path-is-absolute@1.0.1"
+      ]
+    },
+    {
+      "ref": "pkg:npm/has-unicode@2.0.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/https-proxy-agent@5.0.1",
+      "dependsOn": [
+        "pkg:npm/agent-base@6.0.2",
+        "pkg:npm/debug@4.4.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/inflight@1.0.6",
+      "dependsOn": [
+        "pkg:npm/once@1.4.0",
+        "pkg:npm/wrappy@1.0.2"
+      ]
+    },
+    {
+      "ref": "pkg:npm/inherits@2.0.4",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/is-fullwidth-code-point@3.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/leftpad@0.0.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/make-dir@3.1.0",
+      "dependsOn": [
+        "pkg:npm/semver@6.3.1"
+      ]
+    },
+    {
+      "ref": "pkg:npm/minimatch@3.1.2",
+      "dependsOn": [
+        "pkg:npm/brace-expansion@1.1.11"
+      ]
+    },
+    {
+      "ref": "pkg:npm/minipass@3.3.6",
+      "dependsOn": [
+        "pkg:npm/yallist@4.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/minipass@5.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/minizlib@2.1.2",
+      "dependsOn": [
+        "pkg:npm/minipass@3.3.6",
+        "pkg:npm/yallist@4.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/mkdirp@1.0.4",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/ms@2.1.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/node-addon-api@5.1.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/node-fetch@2.7.0",
+      "dependsOn": [
+        "pkg:npm/whatwg-url@5.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/nopt@5.0.0",
+      "dependsOn": [
+        "pkg:npm/abbrev@1.1.1"
+      ]
+    },
+    {
+      "ref": "pkg:npm/npmlog@5.0.1",
+      "dependsOn": [
+        "pkg:npm/are-we-there-yet@2.0.0",
+        "pkg:npm/console-control-strings@1.1.0",
+        "pkg:npm/gauge@3.0.2",
+        "pkg:npm/set-blocking@2.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/object-assign@4.1.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/once@1.4.0",
+      "dependsOn": [
+        "pkg:npm/wrappy@1.0.2"
+      ]
+    },
+    {
+      "ref": "pkg:npm/path-is-absolute@1.0.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/readable-stream@3.6.2",
+      "dependsOn": [
+        "pkg:npm/inherits@2.0.4",
+        "pkg:npm/string_decoder@1.3.0",
+        "pkg:npm/util-deprecate@1.0.2"
+      ]
+    },
+    {
+      "ref": "pkg:npm/rimraf@3.0.2",
+      "dependsOn": [
+        "pkg:npm/glob@7.2.3"
+      ]
+    },
+    {
+      "ref": "pkg:npm/safe-buffer@5.2.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/semver@6.3.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/semver@7.7.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/set-blocking@2.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/signal-exit@3.0.7",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/string-width@4.2.3",
+      "dependsOn": [
+        "pkg:npm/emoji-regex@8.0.0",
+        "pkg:npm/is-fullwidth-code-point@3.0.0",
+        "pkg:npm/strip-ansi@6.0.1"
+      ]
+    },
+    {
+      "ref": "pkg:npm/string_decoder@1.3.0",
+      "dependsOn": [
+        "pkg:npm/safe-buffer@5.2.1"
+      ]
+    },
+    {
+      "ref": "pkg:npm/strip-ansi@6.0.1",
+      "dependsOn": [
+        "pkg:npm/ansi-regex@5.0.1"
+      ]
+    },
+    {
+      "ref": "pkg:npm/tar@6.2.1",
+      "dependsOn": [
+        "pkg:npm/chownr@2.0.0",
+        "pkg:npm/fs-minipass@2.1.0",
+        "pkg:npm/minipass@5.0.0",
+        "pkg:npm/minizlib@2.1.2",
+        "pkg:npm/mkdirp@1.0.4",
+        "pkg:npm/yallist@4.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/tr46@0.0.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/util-deprecate@1.0.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/webidl-conversions@3.0.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/whatwg-url@5.0.0",
+      "dependsOn": [
+        "pkg:npm/tr46@0.0.3",
+        "pkg:npm/webidl-conversions@3.0.1"
+      ]
+    },
+    {
+      "ref": "pkg:npm/wide-align@1.1.5",
+      "dependsOn": [
+        "pkg:npm/string-width@4.2.3"
+      ]
+    },
+    {
+      "ref": "pkg:npm/wrappy@1.0.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/yallist@4.0.0",
+      "dependsOn": []
+    }
+  ]
+}

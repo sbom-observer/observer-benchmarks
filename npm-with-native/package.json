@@ -1,0 +1,11 @@
+{
+  "name": "npm-with-native-dependencies",
+  "version": "1.0.0",
+  "description": "Test package with native dependencies (bcryp)",
+  "main": "index.js",
+  "license": "ISC",
+  "dependencies": {
+    "leftpad": "^0.0.1",
+    "bcrypt": "5.1.1"
+  }
+}

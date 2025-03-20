@@ -1,0 +1,1099 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "serialNumber": "urn:uuid:373b29da-31ae-4877-a9f6-12f2d990d2f7",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2025-03-19T18:11:33+00:00",
+    "lifecycles": [
+      {
+        "phase": "build"
+      }
+    ],
+    "tools": {
+      "components": [
+        {
+          "type": "application",
+          "publisher": "https://sbom.observer",
+          "name": "observer",
+          "version": "dev",
+          "externalReferences": [
+            {
+              "url": "https://github.com/sbom-observer/observer-cli",
+              "type": "website"
+            }
+          ]
+        },
+        {
+          "type": "application",
+          "name": "build-observer",
+          "version": "0.1",
+          "externalReferences": [
+            {
+              "url": "https://github.com/sbom-observer/build-observer",
+              "type": "website"
+            }
+          ]
+        }
+      ]
+    },
+    "component": {
+      "bom-ref": "2a632042-f37b-4b2d-80a6-1e32605cba09",
+      "type": "application",
+      "name": ""
+    }
+  },
+  "components": [
+    {
+      "bom-ref": "pkg:rpm/fedora/gcc@11.4.1?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "gcc",
+      "version": "11.4.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:rpm/fedora/gcc@11.4.1?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:generic/gcc-11.4.1-2.amzn2023.0.2.src.rpm@11.4.1",
+      "type": "library",
+      "name": "gcc-11.4.1-2.amzn2023.0.2.src.rpm",
+      "version": "11.4.1",
+      "purl": "pkg:generic/gcc-11.4.1-2.amzn2023.0.2.src.rpm@11.4.1"
+    },
+    {
+      "bom-ref": "pkg:generic/glibc-2.34-117.amzn2023.0.1.src.rpm@2.34",
+      "type": "library",
+      "name": "glibc-2.34-117.amzn2023.0.1.src.rpm",
+      "version": "2.34",
+      "purl": "pkg:generic/glibc-2.34-117.amzn2023.0.1.src.rpm@2.34"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/glibc-devel@2.34?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "glibc-devel",
+      "version": "2.34",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "HPND"
+          }
+        },
+        {
+          "license": {
+            "id": "Spencer-94"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:rpm/fedora/glibc-devel@2.34?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/glibc-headers-x86@2.34?arch=noarch\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "glibc-headers-x86",
+      "version": "2.34",
+      "licenses": [
+        {
+          "expression": "LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL"
+        }
+      ],
+      "purl": "pkg:rpm/fedora/glibc-headers-x86@2.34?arch=noarch\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:generic/kernel-6.1.129-138.220.amzn2023.src.rpm@6.1.129",
+      "type": "library",
+      "name": "kernel-6.1.129-138.220.amzn2023.src.rpm",
+      "version": "6.1.129",
+      "purl": "pkg:generic/kernel-6.1.129-138.220.amzn2023.src.rpm@6.1.129"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/kernel-headers@6.1.129?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "kernel-headers",
+      "version": "6.1.129",
+      "licenses": [
+        {
+          "expression": "GPLv2 and Redistributable, no modification permitted"
+        }
+      ],
+      "purl": "pkg:rpm/fedora/kernel-headers@6.1.129?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:generic/libxcrypt-4.4.33-7.amzn2023.src.rpm@4.4.33",
+      "type": "library",
+      "name": "libxcrypt-4.4.33-7.amzn2023.src.rpm",
+      "version": "4.4.33",
+      "purl": "pkg:generic/libxcrypt-4.4.33-7.amzn2023.src.rpm@4.4.33"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/libxcrypt-devel@4.4.33?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "libxcrypt-devel",
+      "version": "4.4.33",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "purl": "pkg:rpm/fedora/libxcrypt-devel@4.4.33?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:generic/openssl-3.0.8-1.amzn2023.0.19.src.rpm@3.0.8",
+      "type": "library",
+      "name": "openssl-3.0.8-1.amzn2023.0.19.src.rpm",
+      "version": "3.0.8",
+      "purl": "pkg:generic/openssl-3.0.8-1.amzn2023.0.19.src.rpm@3.0.8"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/openssl-devel@3.0.8?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "openssl-devel",
+      "version": "3.0.8",
+      "purl": "pkg:rpm/fedora/openssl-devel@3.0.8?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:generic/pcre-8.44-3.amzn2023.1.0.3.src.rpm@8.44",
+      "type": "library",
+      "name": "pcre-8.44-3.amzn2023.1.0.3.src.rpm",
+      "version": "8.44",
+      "purl": "pkg:generic/pcre-8.44-3.amzn2023.1.0.3.src.rpm@8.44"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/pcre-devel@8.44?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "pcre-devel",
+      "version": "8.44",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "purl": "pkg:rpm/fedora/pcre-devel@8.44?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:generic/zlib-1.2.11-33.amzn2023.0.5.src.rpm@1.2.11",
+      "type": "library",
+      "name": "zlib-1.2.11-33.amzn2023.0.5.src.rpm",
+      "version": "1.2.11",
+      "purl": "pkg:generic/zlib-1.2.11-33.amzn2023.0.5.src.rpm@1.2.11"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/zlib-devel@1.2.11?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "zlib-devel",
+      "version": "1.2.11",
+      "licenses": [
+        {
+          "license": {
+            "id": "Zlib"
+          }
+        }
+      ],
+      "purl": "pkg:rpm/fedora/zlib-devel@1.2.11?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/binutils@2.39?arch=x86_64\u0026distro=amzn-2023",
+      "type": "application",
+      "name": "binutils",
+      "version": "2.39",
+      "scope": "excluded",
+      "purl": "pkg:rpm/fedora/binutils@2.39?arch=x86_64\u0026distro=amzn-2023",
+      "components": [
+        {
+          "type": "file",
+          "name": "/usr/bin/ld.bfd",
+          "hashes": [
+            {
+              "alg": "SHA-256",
+              "content": "3c968d80cf9159503f48ba2db26a303363b153f5b95f1a430e350016df955673"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/cpp@11.4.1?arch=x86_64\u0026distro=amzn-2023",
+      "type": "application",
+      "name": "cpp",
+      "version": "11.4.1",
+      "scope": "excluded",
+      "purl": "pkg:rpm/fedora/cpp@11.4.1?arch=x86_64\u0026distro=amzn-2023",
+      "components": [
+        {
+          "type": "file",
+          "name": "/usr/libexec/gcc/x86_64-amazon-linux/11/cc1",
+          "hashes": [
+            {
+              "alg": "SHA-256",
+              "content": "18c6e51baa0c288ab0de0f823785bfb5be1902123e381ed9309988eee6f2bef6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/alternatives@1.15?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "alternatives",
+      "version": "1.15",
+      "purl": "pkg:rpm/fedora/alternatives@1.15?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/amazon-linux-repo-cdn@2023.6.20250303?arch=noarch\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "amazon-linux-repo-cdn",
+      "version": "2023.6.20250303",
+      "purl": "pkg:rpm/fedora/amazon-linux-repo-cdn@2023.6.20250303?arch=noarch\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/amazon-rpm-config@228?arch=noarch\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "amazon-rpm-config",
+      "version": "228",
+      "purl": "pkg:rpm/fedora/amazon-rpm-config@228?arch=noarch\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/audit-libs@3.0.6?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "audit-libs",
+      "version": "3.0.6",
+      "purl": "pkg:rpm/fedora/audit-libs@3.0.6?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/basesystem@11?arch=noarch\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "basesystem",
+      "version": "11",
+      "purl": "pkg:rpm/fedora/basesystem@11?arch=noarch\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/bash@5.2.15?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "bash",
+      "version": "5.2.15",
+      "purl": "pkg:rpm/fedora/bash@5.2.15?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/bzip2-libs@1.0.8?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "bzip2-libs",
+      "version": "1.0.8",
+      "purl": "pkg:rpm/fedora/bzip2-libs@1.0.8?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/ca-certificates@2023.2.68?arch=noarch\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "ca-certificates",
+      "version": "2023.2.68",
+      "purl": "pkg:rpm/fedora/ca-certificates@2023.2.68?arch=noarch\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/coreutils-single@8.32?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "coreutils-single",
+      "version": "8.32",
+      "purl": "pkg:rpm/fedora/coreutils-single@8.32?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/crypto-policies@20240828?arch=noarch\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "crypto-policies",
+      "version": "20240828",
+      "purl": "pkg:rpm/fedora/crypto-policies@20240828?arch=noarch\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/curl-minimal@8.5.0?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "curl-minimal",
+      "version": "8.5.0",
+      "purl": "pkg:rpm/fedora/curl-minimal@8.5.0?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/dwz@0.14?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "dwz",
+      "version": "0.14",
+      "purl": "pkg:rpm/fedora/dwz@0.14?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/efi-srpm-macros@5?arch=noarch\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "efi-srpm-macros",
+      "version": "5",
+      "purl": "pkg:rpm/fedora/efi-srpm-macros@5?arch=noarch\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/elfutils-debuginfod-client@0.188?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "elfutils-debuginfod-client",
+      "version": "0.188",
+      "purl": "pkg:rpm/fedora/elfutils-debuginfod-client@0.188?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/elfutils-default-yama-scope@0.188?arch=noarch\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "elfutils-default-yama-scope",
+      "version": "0.188",
+      "purl": "pkg:rpm/fedora/elfutils-default-yama-scope@0.188?arch=noarch\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/elfutils-libelf@0.188?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "elfutils-libelf",
+      "version": "0.188",
+      "purl": "pkg:rpm/fedora/elfutils-libelf@0.188?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/elfutils-libs@0.188?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "elfutils-libs",
+      "version": "0.188",
+      "purl": "pkg:rpm/fedora/elfutils-libs@0.188?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/file@5.39?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "file",
+      "version": "5.39",
+      "purl": "pkg:rpm/fedora/file@5.39?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/file-libs@5.39?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "file-libs",
+      "version": "5.39",
+      "purl": "pkg:rpm/fedora/file-libs@5.39?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/filesystem@3.14?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "filesystem",
+      "version": "3.14",
+      "purl": "pkg:rpm/fedora/filesystem@3.14?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/findutils@4.8.0?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "findutils",
+      "version": "4.8.0",
+      "purl": "pkg:rpm/fedora/findutils@4.8.0?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/fonts-srpm-macros@2.0.5?arch=noarch\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "fonts-srpm-macros",
+      "version": "2.0.5",
+      "purl": "pkg:rpm/fedora/fonts-srpm-macros@2.0.5?arch=noarch\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/gawk@5.1.0?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "gawk",
+      "version": "5.1.0",
+      "purl": "pkg:rpm/fedora/gawk@5.1.0?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/gc@8.0.4?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "gc",
+      "version": "8.0.4",
+      "purl": "pkg:rpm/fedora/gc@8.0.4?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/ghc-srpm-macros@1.5.0?arch=noarch\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "ghc-srpm-macros",
+      "version": "1.5.0",
+      "purl": "pkg:rpm/fedora/ghc-srpm-macros@1.5.0?arch=noarch\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/glibc@2.34?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "glibc",
+      "version": "2.34",
+      "purl": "pkg:rpm/fedora/glibc@2.34?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/glibc-common@2.34?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "glibc-common",
+      "version": "2.34",
+      "purl": "pkg:rpm/fedora/glibc-common@2.34?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/glibc-minimal-langpack@2.34?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "glibc-minimal-langpack",
+      "version": "2.34",
+      "purl": "pkg:rpm/fedora/glibc-minimal-langpack@2.34?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/gmp@6.2.1?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "gmp",
+      "version": "6.2.1",
+      "purl": "pkg:rpm/fedora/gmp@6.2.1?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/go-srpm-macros@3.2.0?arch=noarch\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "go-srpm-macros",
+      "version": "3.2.0",
+      "purl": "pkg:rpm/fedora/go-srpm-macros@3.2.0?arch=noarch\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/grep@3.8?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "grep",
+      "version": "3.8",
+      "purl": "pkg:rpm/fedora/grep@3.8?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/guile22@2.2.7?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "guile22",
+      "version": "2.2.7",
+      "purl": "pkg:rpm/fedora/guile22@2.2.7?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/jansson@2.14?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "jansson",
+      "version": "2.14",
+      "purl": "pkg:rpm/fedora/jansson@2.14?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/kernel-srpm-macros@1.0?arch=noarch\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "kernel-srpm-macros",
+      "version": "1.0",
+      "purl": "pkg:rpm/fedora/kernel-srpm-macros@1.0?arch=noarch\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/keyutils-libs@1.6.3?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "keyutils-libs",
+      "version": "1.6.3",
+      "purl": "pkg:rpm/fedora/keyutils-libs@1.6.3?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/krb5-libs@1.21.3?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "krb5-libs",
+      "version": "1.21.3",
+      "purl": "pkg:rpm/fedora/krb5-libs@1.21.3?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/libacl@2.3.1?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "libacl",
+      "version": "2.3.1",
+      "purl": "pkg:rpm/fedora/libacl@2.3.1?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/libarchive@3.7.4?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "libarchive",
+      "version": "3.7.4",
+      "purl": "pkg:rpm/fedora/libarchive@3.7.4?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/libattr@2.5.1?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "libattr",
+      "version": "2.5.1",
+      "purl": "pkg:rpm/fedora/libattr@2.5.1?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/libcap@2.48?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "libcap",
+      "version": "2.48",
+      "purl": "pkg:rpm/fedora/libcap@2.48?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/libcap-ng@0.8.2?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "libcap-ng",
+      "version": "0.8.2",
+      "purl": "pkg:rpm/fedora/libcap-ng@0.8.2?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/libcom_err@1.46.5?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "libcom_err",
+      "version": "1.46.5",
+      "purl": "pkg:rpm/fedora/libcom_err@1.46.5?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/libcurl-minimal@8.5.0?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "libcurl-minimal",
+      "version": "8.5.0",
+      "purl": "pkg:rpm/fedora/libcurl-minimal@8.5.0?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/libffi@3.4.4?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "libffi",
+      "version": "3.4.4",
+      "purl": "pkg:rpm/fedora/libffi@3.4.4?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/libgcc@11.4.1?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "libgcc",
+      "version": "11.4.1",
+      "purl": "pkg:rpm/fedora/libgcc@11.4.1?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/libgomp@11.4.1?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "libgomp",
+      "version": "11.4.1",
+      "purl": "pkg:rpm/fedora/libgomp@11.4.1?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/libidn2@2.3.2?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "libidn2",
+      "version": "2.3.2",
+      "purl": "pkg:rpm/fedora/libidn2@2.3.2?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/libmpc@1.2.1?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "libmpc",
+      "version": "1.2.1",
+      "purl": "pkg:rpm/fedora/libmpc@1.2.1?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/libnghttp2@1.59.0?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "libnghttp2",
+      "version": "1.59.0",
+      "purl": "pkg:rpm/fedora/libnghttp2@1.59.0?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/libpkgconf@1.8.0?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "libpkgconf",
+      "version": "1.8.0",
+      "purl": "pkg:rpm/fedora/libpkgconf@1.8.0?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/libpsl@0.21.1?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "libpsl",
+      "version": "0.21.1",
+      "purl": "pkg:rpm/fedora/libpsl@0.21.1?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/libselinux@3.4?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "libselinux",
+      "version": "3.4",
+      "purl": "pkg:rpm/fedora/libselinux@3.4?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/libsepol@3.4?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "libsepol",
+      "version": "3.4",
+      "purl": "pkg:rpm/fedora/libsepol@3.4?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/libsigsegv@2.13?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "libsigsegv",
+      "version": "2.13",
+      "purl": "pkg:rpm/fedora/libsigsegv@2.13?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/libstdc++@11.4.1?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "libstdc++",
+      "version": "11.4.1",
+      "purl": "pkg:rpm/fedora/libstdc++@11.4.1?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/libtasn1@4.19.0?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "libtasn1",
+      "version": "4.19.0",
+      "purl": "pkg:rpm/fedora/libtasn1@4.19.0?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/libtool-ltdl@2.4.7?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "libtool-ltdl",
+      "version": "2.4.7",
+      "purl": "pkg:rpm/fedora/libtool-ltdl@2.4.7?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/libunistring@0.9.10?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "libunistring",
+      "version": "0.9.10",
+      "purl": "pkg:rpm/fedora/libunistring@0.9.10?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/libverto@0.3.2?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "libverto",
+      "version": "0.3.2",
+      "purl": "pkg:rpm/fedora/libverto@0.3.2?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/libxcrypt@4.4.33?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "libxcrypt",
+      "version": "4.4.33",
+      "purl": "pkg:rpm/fedora/libxcrypt@4.4.33?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/libxml2@2.10.4?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "libxml2",
+      "version": "2.10.4",
+      "purl": "pkg:rpm/fedora/libxml2@2.10.4?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/libzstd@1.5.5?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "libzstd",
+      "version": "1.5.5",
+      "purl": "pkg:rpm/fedora/libzstd@1.5.5?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/lua-libs@5.4.4?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "lua-libs",
+      "version": "5.4.4",
+      "purl": "pkg:rpm/fedora/lua-libs@5.4.4?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/lua-srpm-macros@1?arch=noarch\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "lua-srpm-macros",
+      "version": "1",
+      "purl": "pkg:rpm/fedora/lua-srpm-macros@1?arch=noarch\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/lz4-libs@1.9.4?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "lz4-libs",
+      "version": "1.9.4",
+      "purl": "pkg:rpm/fedora/lz4-libs@1.9.4?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/make@4.3?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "make",
+      "version": "4.3",
+      "purl": "pkg:rpm/fedora/make@4.3?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/mpfr@4.1.0?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "mpfr",
+      "version": "4.1.0",
+      "purl": "pkg:rpm/fedora/mpfr@4.1.0?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/ncurses-base@6.2?arch=noarch\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "ncurses-base",
+      "version": "6.2",
+      "purl": "pkg:rpm/fedora/ncurses-base@6.2?arch=noarch\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/ncurses-libs@6.2?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "ncurses-libs",
+      "version": "6.2",
+      "purl": "pkg:rpm/fedora/ncurses-libs@6.2?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/ocaml-srpm-macros@6?arch=noarch\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "ocaml-srpm-macros",
+      "version": "6",
+      "purl": "pkg:rpm/fedora/ocaml-srpm-macros@6?arch=noarch\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/openblas-srpm-macros@2?arch=noarch\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "openblas-srpm-macros",
+      "version": "2",
+      "purl": "pkg:rpm/fedora/openblas-srpm-macros@2?arch=noarch\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/openssl-libs@3.0.8?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "openssl-libs",
+      "version": "3.0.8",
+      "purl": "pkg:rpm/fedora/openssl-libs@3.0.8?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/p11-kit@0.24.1?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "p11-kit",
+      "version": "0.24.1",
+      "purl": "pkg:rpm/fedora/p11-kit@0.24.1?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/p11-kit-trust@0.24.1?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "p11-kit-trust",
+      "version": "0.24.1",
+      "purl": "pkg:rpm/fedora/p11-kit-trust@0.24.1?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/package-notes-srpm-macros@0.4?arch=noarch\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "package-notes-srpm-macros",
+      "version": "0.4",
+      "purl": "pkg:rpm/fedora/package-notes-srpm-macros@0.4?arch=noarch\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/pcre@8.44?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "pcre",
+      "version": "8.44",
+      "purl": "pkg:rpm/fedora/pcre@8.44?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/pcre-cpp@8.44?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "pcre-cpp",
+      "version": "8.44",
+      "purl": "pkg:rpm/fedora/pcre-cpp@8.44?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/pcre-utf16@8.44?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "pcre-utf16",
+      "version": "8.44",
+      "purl": "pkg:rpm/fedora/pcre-utf16@8.44?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/pcre-utf32@8.44?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "pcre-utf32",
+      "version": "8.44",
+      "purl": "pkg:rpm/fedora/pcre-utf32@8.44?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/pcre2@10.40?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "pcre2",
+      "version": "10.40",
+      "purl": "pkg:rpm/fedora/pcre2@10.40?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/pcre2-syntax@10.40?arch=noarch\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "pcre2-syntax",
+      "version": "10.40",
+      "purl": "pkg:rpm/fedora/pcre2-syntax@10.40?arch=noarch\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/perl-srpm-macros@1?arch=noarch\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "perl-srpm-macros",
+      "version": "1",
+      "purl": "pkg:rpm/fedora/perl-srpm-macros@1?arch=noarch\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/pkgconf@1.8.0?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "pkgconf",
+      "version": "1.8.0",
+      "purl": "pkg:rpm/fedora/pkgconf@1.8.0?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/pkgconf-m4@1.8.0?arch=noarch\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "pkgconf-m4",
+      "version": "1.8.0",
+      "purl": "pkg:rpm/fedora/pkgconf-m4@1.8.0?arch=noarch\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/pkgconf-pkg-config@1.8.0?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "pkgconf-pkg-config",
+      "version": "1.8.0",
+      "purl": "pkg:rpm/fedora/pkgconf-pkg-config@1.8.0?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/popt@1.18?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "popt",
+      "version": "1.18",
+      "purl": "pkg:rpm/fedora/popt@1.18?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/publicsuffix-list-dafsa@20240212?arch=noarch\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "publicsuffix-list-dafsa",
+      "version": "20240212",
+      "purl": "pkg:rpm/fedora/publicsuffix-list-dafsa@20240212?arch=noarch\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/python-srpm-macros@3.9?arch=noarch\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "python-srpm-macros",
+      "version": "3.9",
+      "purl": "pkg:rpm/fedora/python-srpm-macros@3.9?arch=noarch\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/readline@8.1?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "readline",
+      "version": "8.1",
+      "purl": "pkg:rpm/fedora/readline@8.1?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/rpm@4.16.1.3?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "rpm",
+      "version": "4.16.1.3",
+      "purl": "pkg:rpm/fedora/rpm@4.16.1.3?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/rpm-libs@4.16.1.3?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "rpm-libs",
+      "version": "4.16.1.3",
+      "purl": "pkg:rpm/fedora/rpm-libs@4.16.1.3?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/rust-toolset-srpm-macros@1.84.0?arch=noarch\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "rust-toolset-srpm-macros",
+      "version": "1.84.0",
+      "purl": "pkg:rpm/fedora/rust-toolset-srpm-macros@1.84.0?arch=noarch\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/sed@4.8?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "sed",
+      "version": "4.8",
+      "purl": "pkg:rpm/fedora/sed@4.8?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/setup@2.13.7?arch=noarch\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "setup",
+      "version": "2.13.7",
+      "purl": "pkg:rpm/fedora/setup@2.13.7?arch=noarch\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/sqlite-libs@3.40.0?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "sqlite-libs",
+      "version": "3.40.0",
+      "purl": "pkg:rpm/fedora/sqlite-libs@3.40.0?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/system-release@2023.6.20250303?arch=noarch\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "system-release",
+      "version": "2023.6.20250303",
+      "purl": "pkg:rpm/fedora/system-release@2023.6.20250303?arch=noarch\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/unzip@6.0?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "unzip",
+      "version": "6.0",
+      "purl": "pkg:rpm/fedora/unzip@6.0?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/xz-libs@5.2.5?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "xz-libs",
+      "version": "5.2.5",
+      "purl": "pkg:rpm/fedora/xz-libs@5.2.5?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/zip@3.0?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "zip",
+      "version": "3.0",
+      "purl": "pkg:rpm/fedora/zip@3.0?arch=x86_64\u0026distro=amzn-2023"
+    },
+    {
+      "bom-ref": "pkg:rpm/fedora/zlib@1.2.11?arch=x86_64\u0026distro=amzn-2023",
+      "type": "library",
+      "name": "zlib",
+      "version": "1.2.11",
+      "purl": "pkg:rpm/fedora/zlib@1.2.11?arch=x86_64\u0026distro=amzn-2023"
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "pkg:rpm/fedora/openssl-devel@3.0.8?arch=x86_64\u0026distro=amzn-2023",
+      "dependsOn": [
+        "pkg:rpm/fedora/pkgconf-pkg-config@1.8.0?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/openssl-libs@3.0.8?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/openssl-devel@3.0.8?arch=x86_64\u0026distro=amzn-2023"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/fedora/pcre-devel@8.44?arch=x86_64\u0026distro=amzn-2023",
+      "dependsOn": [
+        "pkg:rpm/fedora/pkgconf-pkg-config@1.8.0?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/bash@5.2.15?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/pcre@8.44?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/pcre-utf16@8.44?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/pcre-utf32@8.44?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/pcre-cpp@8.44?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/pcre-devel@8.44?arch=x86_64\u0026distro=amzn-2023"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/fedora/zlib-devel@1.2.11?arch=x86_64\u0026distro=amzn-2023",
+      "dependsOn": [
+        "pkg:rpm/fedora/pkgconf-pkg-config@1.8.0?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/zlib@1.2.11?arch=x86_64\u0026distro=amzn-2023"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/fedora/binutils@2.39?arch=x86_64\u0026distro=amzn-2023",
+      "dependsOn": [
+        "pkg:rpm/fedora/bash@5.2.15?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/alternatives@1.15?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/coreutils-single@8.32?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/binutils@2.39?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/glibc@2.34?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/elfutils-debuginfod-client@0.188?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/jansson@2.14?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/zlib@1.2.11?arch=x86_64\u0026distro=amzn-2023"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/fedora/cpp@11.4.1?arch=x86_64\u0026distro=amzn-2023",
+      "dependsOn": [
+        "pkg:rpm/fedora/filesystem@3.14?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/glibc@2.34?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/gmp@6.2.1?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/libmpc@1.2.1?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/mpfr@4.1.0?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/zlib@1.2.11?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/libzstd@1.5.5?arch=x86_64\u0026distro=amzn-2023"
+      ]
+    },
+    {
+      "ref": "2a632042-f37b-4b2d-80a6-1e32605cba09",
+      "dependsOn": [
+        "pkg:rpm/fedora/gcc@11.4.1?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/glibc-devel@2.34?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/glibc-headers-x86@2.34?arch=noarch\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/kernel-headers@6.1.129?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/libxcrypt-devel@4.4.33?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/openssl-devel@3.0.8?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/pcre-devel@8.44?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/zlib-devel@1.2.11?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/binutils@2.39?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/cpp@11.4.1?arch=x86_64\u0026distro=amzn-2023"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/fedora/glibc-devel@2.34?arch=x86_64\u0026distro=amzn-2023",
+      "dependsOn": [
+        "pkg:rpm/fedora/glibc@2.34?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/glibc-headers-x86@2.34?arch=noarch\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/kernel-headers@6.1.129?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/libxcrypt-devel@4.4.33?arch=x86_64\u0026distro=amzn-2023"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/fedora/glibc-headers-x86@2.34?arch=noarch\u0026distro=amzn-2023",
+      "dependsOn": [
+        "pkg:rpm/fedora/glibc@2.34?arch=x86_64\u0026distro=amzn-2023"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/fedora/libxcrypt-devel@4.4.33?arch=x86_64\u0026distro=amzn-2023",
+      "dependsOn": [
+        "pkg:rpm/fedora/pkgconf-pkg-config@1.8.0?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/glibc-devel@2.34?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/libxcrypt@4.4.33?arch=x86_64\u0026distro=amzn-2023"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/fedora/gcc@11.4.1?arch=x86_64\u0026distro=amzn-2023",
+      "dependsOn": [
+        "pkg:rpm/fedora/bash@5.2.15?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/binutils@2.39?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/cpp@11.4.1?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/glibc-devel@2.34?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/glibc@2.34?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/libgcc@11.4.1?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/gmp@6.2.1?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/libgomp@11.4.1?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/libmpc@1.2.1?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/mpfr@4.1.0?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/zlib@1.2.11?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/libzstd@1.5.5?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/make@4.3?arch=x86_64\u0026distro=amzn-2023"
+      ]
+    }
+  ]
+}

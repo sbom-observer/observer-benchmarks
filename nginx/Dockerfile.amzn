@@ -1,0 +1,49 @@
+FROM observer-builder AS builder
+
+# Use a base image with necessary build tools
+FROM amazonlinux:2023
+
+# Set environment variables
+ENV NGINX_VERSION=1.25.3 
+
+# Install dependencies
+RUN yum update -y && yum install --skip-broken -y \
+    gcc \
+    gcc-c++ \
+    make \
+    pcre-devel \
+    zlib-devel \
+    openssl-devel \
+    wget \
+    tar \
+    gzip \
+    curl
+
+# Download and extract Nginx source
+RUN cd /usr/local/src && \
+    wget http://nginx.org/download/nginx-${NGINX_VERSION}.tar.gz && \
+    tar -xzf nginx-${NGINX_VERSION}.tar.gz && \
+    rm nginx-${NGINX_VERSION}.tar.gz
+
+# Compile Nginx
+RUN cd /usr/local/src/nginx-${NGINX_VERSION} && \
+    ./configure \
+        --prefix=/usr/local/nginx \
+        --sbin-path=/usr/sbin/nginx \
+        --conf-path=/etc/nginx/nginx.conf \
+        --error-log-path=/var/log/nginx/error.log \
+        --http-log-path=/var/log/nginx/access.log \
+        --pid-path=/var/run/nginx.pid \
+        --lock-path=/var/run/nginx.lock \
+        --with-http_ssl_module \
+        --with-http_gzip_static_module \
+        --with-http_v2_module \
+        --with-pcre \
+        --with-file-aio \
+        --with-threads 
+
+
+COPY --from=builder /src/observer-cli/observer /usr/local/bin/observer
+RUN chmod +x /usr/local/bin/observer
+
+WORKDIR /usr/local/src/nginx-${NGINX_VERSION} 
