@@ -8,7 +8,7 @@ fi
 
 for os in debian; do
     OUTPUT_SBOM="npm-with-native.observer.cdx.${os}.json"
-    CMD="observer --debug build -- npm install --build-from-source --no-progress && observer --debug repo --merge /output/$OUTPUT_SBOM ."
+    CMD="observer --debug build -- npm install --build-from-source --no-progress && cp build-observations.json /output && observer --debug repo --merge /output/$OUTPUT_SBOM ."
     docker run --rm -it -v debugfs:/sys/kernel/debug:rw -v .:/output --net=host --pid=host --privileged observer-benchmark-npm-with-native-${os}:latest /bin/bash -c "$CMD"
 
     OUTPUT_SBOM="npm-with-native.trivy.cdx.${os}.json"

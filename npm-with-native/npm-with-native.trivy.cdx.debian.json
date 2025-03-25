@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:f74a0c43-cd9b-4038-950e-d42e5dc9c9e9",
+  "serialNumber": "urn:uuid:a752611e-7d51-4c58-8016-1d1d68d5fe8f",
   "version": 1,
   "metadata": {
-    "timestamp": "2025-03-20T16:03:26+00:00",
+    "timestamp": "2025-03-25T10:40:31+00:00",
     "tools": {
       "components": [
         {
@@ -17,7 +17,7 @@
       ]
     },
     "component": {
-      "bom-ref": "c5f7bd29-3144-4587-a217-9ca6d757d260",
+      "bom-ref": "157eb69a-c6fe-43a8-ae88-c4b99329d8bb",
       "type": "application",
       "name": "/src",
       "properties": [
@@ -30,7 +30,7 @@
   },
   "components": [
     {
-      "bom-ref": "0e0d334c-e613-4791-a9a6-8d765475134e",
+      "bom-ref": "874a3894-72c7-44ec-ab11-39416787ec57",
       "type": "application",
       "name": "package-lock.json",
       "properties": [
@@ -1464,16 +1464,16 @@
   ],
   "dependencies": [
     {
-      "ref": "0e0d334c-e613-4791-a9a6-8d765475134e",
+      "ref": "157eb69a-c6fe-43a8-ae88-c4b99329d8bb",
       "dependsOn": [
-        "pkg:npm/bcrypt@5.1.1",
-        "pkg:npm/leftpad@0.0.1"
+        "874a3894-72c7-44ec-ab11-39416787ec57"
       ]
     },
     {
-      "ref": "c5f7bd29-3144-4587-a217-9ca6d757d260",
+      "ref": "874a3894-72c7-44ec-ab11-39416787ec57",
       "dependsOn": [
-        "0e0d334c-e613-4791-a9a6-8d765475134e"
+        "pkg:npm/bcrypt@5.1.1",
+        "pkg:npm/leftpad@0.0.1"
       ]
     },
     {

@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:373b29da-31ae-4877-a9f6-12f2d990d2f7",
+  "serialNumber": "urn:uuid:6d4f7643-ef38-4cb7-83cc-c36582fa81e1",
   "version": 1,
   "metadata": {
-    "timestamp": "2025-03-19T18:11:33+00:00",
+    "timestamp": "2025-03-25T10:26:42+00:00",
     "lifecycles": [
       {
         "phase": "build"
@@ -39,9 +39,9 @@
       ]
     },
     "component": {
-      "bom-ref": "2a632042-f37b-4b2d-80a6-1e32605cba09",
+      "bom-ref": "26403cf4-63b9-4fc6-b7c3-dd85edf84b4b",
       "type": "application",
-      "name": ""
+      "name": "nginx-1.25.3"
     }
   },
   "components": [
@@ -63,7 +63,7 @@
         },
         {
           "license": {
-            "id": "LGPL-3.0"
+            "id": "GPL-2.0"
           }
         },
         {
@@ -73,7 +73,7 @@
         },
         {
           "license": {
-            "id": "GPL-2.0"
+            "id": "LGPL-3.0"
           }
         }
       ],
@@ -252,6 +252,12 @@
       "version": "2.39",
       "scope": "excluded",
       "purl": "pkg:rpm/fedora/binutils@2.39?arch=x86_64\u0026distro=amzn-2023",
+      "properties": [
+        {
+          "name": "observer:build:role",
+          "value": "tool"
+        }
+      ],
       "components": [
         {
           "type": "file",
@@ -272,6 +278,12 @@
       "version": "11.4.1",
       "scope": "excluded",
       "purl": "pkg:rpm/fedora/cpp@11.4.1?arch=x86_64\u0026distro=amzn-2023",
+      "properties": [
+        {
+          "name": "observer:build:role",
+          "value": "tool"
+        }
+      ],
       "components": [
         {
           "type": "file",
@@ -988,11 +1000,24 @@
   ],
   "dependencies": [
     {
-      "ref": "pkg:rpm/fedora/openssl-devel@3.0.8?arch=x86_64\u0026distro=amzn-2023",
+      "ref": "pkg:rpm/fedora/cpp@11.4.1?arch=x86_64\u0026distro=amzn-2023",
       "dependsOn": [
-        "pkg:rpm/fedora/pkgconf-pkg-config@1.8.0?arch=x86_64\u0026distro=amzn-2023",
-        "pkg:rpm/fedora/openssl-libs@3.0.8?arch=x86_64\u0026distro=amzn-2023",
-        "pkg:rpm/fedora/openssl-devel@3.0.8?arch=x86_64\u0026distro=amzn-2023"
+        "pkg:rpm/fedora/filesystem@3.14?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/glibc@2.34?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/gmp@6.2.1?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/libmpc@1.2.1?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/mpfr@4.1.0?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/zlib@1.2.11?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/libzstd@1.5.5?arch=x86_64\u0026distro=amzn-2023"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/fedora/glibc-devel@2.34?arch=x86_64\u0026distro=amzn-2023",
+      "dependsOn": [
+        "pkg:rpm/fedora/glibc@2.34?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/glibc-headers-x86@2.34?arch=noarch\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/kernel-headers@6.1.129?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/libxcrypt-devel@4.4.33?arch=x86_64\u0026distro=amzn-2023"
       ]
     },
     {
@@ -1005,6 +1030,61 @@
         "pkg:rpm/fedora/pcre-utf32@8.44?arch=x86_64\u0026distro=amzn-2023",
         "pkg:rpm/fedora/pcre-cpp@8.44?arch=x86_64\u0026distro=amzn-2023",
         "pkg:rpm/fedora/pcre-devel@8.44?arch=x86_64\u0026distro=amzn-2023"
+      ]
+    },
+    {
+      "ref": "26403cf4-63b9-4fc6-b7c3-dd85edf84b4b",
+      "dependsOn": [
+        "pkg:rpm/fedora/gcc@11.4.1?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/glibc-devel@2.34?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/glibc-headers-x86@2.34?arch=noarch\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/kernel-headers@6.1.129?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/libxcrypt-devel@4.4.33?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/openssl-devel@3.0.8?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/pcre-devel@8.44?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/zlib-devel@1.2.11?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/binutils@2.39?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/cpp@11.4.1?arch=x86_64\u0026distro=amzn-2023"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/fedora/gcc@11.4.1?arch=x86_64\u0026distro=amzn-2023",
+      "dependsOn": [
+        "pkg:rpm/fedora/bash@5.2.15?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/binutils@2.39?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/cpp@11.4.1?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/glibc-devel@2.34?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/glibc@2.34?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/libgcc@11.4.1?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/gmp@6.2.1?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/libgomp@11.4.1?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/libmpc@1.2.1?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/mpfr@4.1.0?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/zlib@1.2.11?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/libzstd@1.5.5?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/make@4.3?arch=x86_64\u0026distro=amzn-2023"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/fedora/glibc-headers-x86@2.34?arch=noarch\u0026distro=amzn-2023",
+      "dependsOn": [
+        "pkg:rpm/fedora/glibc@2.34?arch=x86_64\u0026distro=amzn-2023"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/fedora/libxcrypt-devel@4.4.33?arch=x86_64\u0026distro=amzn-2023",
+      "dependsOn": [
+        "pkg:rpm/fedora/pkgconf-pkg-config@1.8.0?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/glibc-devel@2.34?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/libxcrypt@4.4.33?arch=x86_64\u0026distro=amzn-2023"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/fedora/openssl-devel@3.0.8?arch=x86_64\u0026distro=amzn-2023",
+      "dependsOn": [
+        "pkg:rpm/fedora/pkgconf-pkg-config@1.8.0?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/openssl-libs@3.0.8?arch=x86_64\u0026distro=amzn-2023",
+        "pkg:rpm/fedora/openssl-devel@3.0.8?arch=x86_64\u0026distro=amzn-2023"
       ]
     },
     {
@@ -1025,74 +1105,6 @@
         "pkg:rpm/fedora/elfutils-debuginfod-client@0.188?arch=x86_64\u0026distro=amzn-2023",
         "pkg:rpm/fedora/jansson@2.14?arch=x86_64\u0026distro=amzn-2023",
         "pkg:rpm/fedora/zlib@1.2.11?arch=x86_64\u0026distro=amzn-2023"
-      ]
-    },
-    {
-      "ref": "pkg:rpm/fedora/cpp@11.4.1?arch=x86_64\u0026distro=amzn-2023",
-      "dependsOn": [
-        "pkg:rpm/fedora/filesystem@3.14?arch=x86_64\u0026distro=amzn-2023",
-        "pkg:rpm/fedora/glibc@2.34?arch=x86_64\u0026distro=amzn-2023",
-        "pkg:rpm/fedora/gmp@6.2.1?arch=x86_64\u0026distro=amzn-2023",
-        "pkg:rpm/fedora/libmpc@1.2.1?arch=x86_64\u0026distro=amzn-2023",
-        "pkg:rpm/fedora/mpfr@4.1.0?arch=x86_64\u0026distro=amzn-2023",
-        "pkg:rpm/fedora/zlib@1.2.11?arch=x86_64\u0026distro=amzn-2023",
-        "pkg:rpm/fedora/libzstd@1.5.5?arch=x86_64\u0026distro=amzn-2023"
-      ]
-    },
-    {
-      "ref": "2a632042-f37b-4b2d-80a6-1e32605cba09",
-      "dependsOn": [
-        "pkg:rpm/fedora/gcc@11.4.1?arch=x86_64\u0026distro=amzn-2023",
-        "pkg:rpm/fedora/glibc-devel@2.34?arch=x86_64\u0026distro=amzn-2023",
-        "pkg:rpm/fedora/glibc-headers-x86@2.34?arch=noarch\u0026distro=amzn-2023",
-        "pkg:rpm/fedora/kernel-headers@6.1.129?arch=x86_64\u0026distro=amzn-2023",
-        "pkg:rpm/fedora/libxcrypt-devel@4.4.33?arch=x86_64\u0026distro=amzn-2023",
-        "pkg:rpm/fedora/openssl-devel@3.0.8?arch=x86_64\u0026distro=amzn-2023",
-        "pkg:rpm/fedora/pcre-devel@8.44?arch=x86_64\u0026distro=amzn-2023",
-        "pkg:rpm/fedora/zlib-devel@1.2.11?arch=x86_64\u0026distro=amzn-2023",
-        "pkg:rpm/fedora/binutils@2.39?arch=x86_64\u0026distro=amzn-2023",
-        "pkg:rpm/fedora/cpp@11.4.1?arch=x86_64\u0026distro=amzn-2023"
-      ]
-    },
-    {
-      "ref": "pkg:rpm/fedora/glibc-devel@2.34?arch=x86_64\u0026distro=amzn-2023",
-      "dependsOn": [
-        "pkg:rpm/fedora/glibc@2.34?arch=x86_64\u0026distro=amzn-2023",
-        "pkg:rpm/fedora/glibc-headers-x86@2.34?arch=noarch\u0026distro=amzn-2023",
-        "pkg:rpm/fedora/kernel-headers@6.1.129?arch=x86_64\u0026distro=amzn-2023",
-        "pkg:rpm/fedora/libxcrypt-devel@4.4.33?arch=x86_64\u0026distro=amzn-2023"
-      ]
-    },
-    {
-      "ref": "pkg:rpm/fedora/glibc-headers-x86@2.34?arch=noarch\u0026distro=amzn-2023",
-      "dependsOn": [
-        "pkg:rpm/fedora/glibc@2.34?arch=x86_64\u0026distro=amzn-2023"
-      ]
-    },
-    {
-      "ref": "pkg:rpm/fedora/libxcrypt-devel@4.4.33?arch=x86_64\u0026distro=amzn-2023",
-      "dependsOn": [
-        "pkg:rpm/fedora/pkgconf-pkg-config@1.8.0?arch=x86_64\u0026distro=amzn-2023",
-        "pkg:rpm/fedora/glibc-devel@2.34?arch=x86_64\u0026distro=amzn-2023",
-        "pkg:rpm/fedora/libxcrypt@4.4.33?arch=x86_64\u0026distro=amzn-2023"
-      ]
-    },
-    {
-      "ref": "pkg:rpm/fedora/gcc@11.4.1?arch=x86_64\u0026distro=amzn-2023",
-      "dependsOn": [
-        "pkg:rpm/fedora/bash@5.2.15?arch=x86_64\u0026distro=amzn-2023",
-        "pkg:rpm/fedora/binutils@2.39?arch=x86_64\u0026distro=amzn-2023",
-        "pkg:rpm/fedora/cpp@11.4.1?arch=x86_64\u0026distro=amzn-2023",
-        "pkg:rpm/fedora/glibc-devel@2.34?arch=x86_64\u0026distro=amzn-2023",
-        "pkg:rpm/fedora/glibc@2.34?arch=x86_64\u0026distro=amzn-2023",
-        "pkg:rpm/fedora/libgcc@11.4.1?arch=x86_64\u0026distro=amzn-2023",
-        "pkg:rpm/fedora/gmp@6.2.1?arch=x86_64\u0026distro=amzn-2023",
-        "pkg:rpm/fedora/libgomp@11.4.1?arch=x86_64\u0026distro=amzn-2023",
-        "pkg:rpm/fedora/libmpc@1.2.1?arch=x86_64\u0026distro=amzn-2023",
-        "pkg:rpm/fedora/mpfr@4.1.0?arch=x86_64\u0026distro=amzn-2023",
-        "pkg:rpm/fedora/zlib@1.2.11?arch=x86_64\u0026distro=amzn-2023",
-        "pkg:rpm/fedora/libzstd@1.5.5?arch=x86_64\u0026distro=amzn-2023",
-        "pkg:rpm/fedora/make@4.3?arch=x86_64\u0026distro=amzn-2023"
       ]
     }
   ]

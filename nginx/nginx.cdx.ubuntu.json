@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:95976d7c-ee03-409a-aadb-25e175252e48",
+  "serialNumber": "urn:uuid:798e4f2c-6316-41f6-9f3f-dc43f7cc9a26",
   "version": 1,
   "metadata": {
-    "timestamp": "2025-03-19T18:12:17+00:00",
+    "timestamp": "2025-03-25T10:27:24+00:00",
     "lifecycles": [
       {
         "phase": "build"
@@ -39,9 +39,9 @@
       ]
     },
     "component": {
-      "bom-ref": "8664f851-ea34-4768-90ec-900ed9d51527",
+      "bom-ref": "740f33c6-d22f-4316-abb4-e73390f697dc",
       "type": "application",
-      "name": ""
+      "name": "nginx-1.25.3"
     }
   },
   "components": [
@@ -310,6 +310,12 @@
       "version": "2.42-4ubuntu2.4",
       "scope": "excluded",
       "purl": "pkg:deb/debian/binutils-x86-64-linux-gnu@2.42-4ubuntu2.4?arch=amd64\u0026distro=ubuntu-24.04",
+      "properties": [
+        {
+          "name": "observer:build:role",
+          "value": "tool"
+        }
+      ],
       "components": [
         {
           "type": "file",
@@ -330,6 +336,12 @@
       "version": "13.3.0-6ubuntu2~24.04",
       "scope": "excluded",
       "purl": "pkg:deb/debian/cpp-13-x86-64-linux-gnu@13.3.0-6ubuntu2~24.04?arch=amd64\u0026distro=ubuntu-24.04",
+      "properties": [
+        {
+          "name": "observer:build:role",
+          "value": "tool"
+        }
+      ],
       "components": [
         {
           "type": "file",
@@ -350,6 +362,12 @@
       "version": "13.3.0-6ubuntu2~24.04",
       "scope": "excluded",
       "purl": "pkg:deb/debian/gcc-13-x86-64-linux-gnu@13.3.0-6ubuntu2~24.04?arch=amd64\u0026distro=ubuntu-24.04",
+      "properties": [
+        {
+          "name": "observer:build:role",
+          "value": "tool"
+        }
+      ],
       "components": [
         {
           "type": "file",
@@ -633,37 +651,17 @@
     {
       "ref": "pkg:deb/debian/libc6-dev@2.39-0ubuntu8.4?arch=amd64\u0026distro=ubuntu-24.04",
       "dependsOn": [
+        "pkg:deb/debian/libc6@2.39-0ubuntu8.4?arch=amd64\u0026distro=ubuntu-24.04",
+        "pkg:deb/debian/libc-dev-bin@2.39-0ubuntu8.4?arch=amd64\u0026distro=ubuntu-24.04",
         "pkg:deb/debian/linux-libc-dev@6.8.0-55.57?arch=amd64\u0026distro=ubuntu-24.04",
         "pkg:deb/debian/libcrypt-dev@1:4.4.36-4build1?arch=amd64\u0026distro=ubuntu-24.04",
-        "pkg:deb/debian/rpcsvc-proto@1.4.2-0ubuntu7?arch=amd64\u0026distro=ubuntu-24.04",
-        "pkg:deb/debian/libc6@2.39-0ubuntu8.4?arch=amd64\u0026distro=ubuntu-24.04",
-        "pkg:deb/debian/libc-dev-bin@2.39-0ubuntu8.4?arch=amd64\u0026distro=ubuntu-24.04"
+        "pkg:deb/debian/rpcsvc-proto@1.4.2-0ubuntu7?arch=amd64\u0026distro=ubuntu-24.04"
       ]
     },
     {
-      "ref": "pkg:deb/debian/libgcc-13-dev@13.3.0-6ubuntu2~24.04?arch=amd64\u0026distro=ubuntu-24.04",
+      "ref": "pkg:deb/debian/libcrypt-dev@1:4.4.36-4build1?arch=amd64\u0026distro=ubuntu-24.04",
       "dependsOn": [
-        "pkg:deb/debian/gcc-13-base@13.3.0-6ubuntu2~24.04?arch=amd64\u0026distro=ubuntu-24.04",
-        "pkg:deb/debian/libgomp1@14.2.0-4ubuntu2~24.04?arch=amd64\u0026distro=ubuntu-24.04",
-        "pkg:deb/debian/libasan8@14.2.0-4ubuntu2~24.04?arch=amd64\u0026distro=ubuntu-24.04",
-        "pkg:deb/debian/libhwasan0@14.2.0-4ubuntu2~24.04?arch=amd64\u0026distro=ubuntu-24.04",
-        "pkg:deb/debian/libubsan1@14.2.0-4ubuntu2~24.04?arch=amd64\u0026distro=ubuntu-24.04",
-        "pkg:deb/debian/libitm1@14.2.0-4ubuntu2~24.04?arch=amd64\u0026distro=ubuntu-24.04",
-        "pkg:deb/debian/libtsan2@14.2.0-4ubuntu2~24.04?arch=amd64\u0026distro=ubuntu-24.04",
-        "pkg:deb/debian/libquadmath0@14.2.0-4ubuntu2~24.04?arch=amd64\u0026distro=ubuntu-24.04",
-        "pkg:deb/debian/libgcc-s1@14.2.0-4ubuntu2~24.04?arch=amd64\u0026distro=ubuntu-24.04",
-        "pkg:deb/debian/libatomic1@14.2.0-4ubuntu2~24.04?arch=amd64\u0026distro=ubuntu-24.04",
-        "pkg:deb/debian/liblsan0@14.2.0-4ubuntu2~24.04?arch=amd64\u0026distro=ubuntu-24.04"
-      ]
-    },
-    {
-      "ref": "pkg:deb/debian/libpcre3-dev@2:8.39-15build1?arch=amd64\u0026distro=ubuntu-24.04",
-      "dependsOn": [
-        "pkg:deb/debian/libpcre3@2:8.39-15build1?arch=amd64\u0026distro=ubuntu-24.04",
-        "pkg:deb/debian/libpcre16-3@2:8.39-15build1?arch=amd64\u0026distro=ubuntu-24.04",
-        "pkg:deb/debian/libpcre32-3@2:8.39-15build1?arch=amd64\u0026distro=ubuntu-24.04",
-        "pkg:deb/debian/libpcrecpp0v5@2:8.39-15build1?arch=amd64\u0026distro=ubuntu-24.04",
-        "pkg:deb/debian/libc6-dev@2.39-0ubuntu8.4?arch=amd64\u0026distro=ubuntu-24.04"
+        "pkg:deb/debian/libcrypt1@1:4.4.36-4build1?arch=amd64\u0026distro=ubuntu-24.04"
       ]
     },
     {
@@ -673,20 +671,89 @@
       ]
     },
     {
+      "ref": "pkg:deb/debian/binutils-x86-64-linux-gnu@2.42-4ubuntu2.4?arch=amd64\u0026distro=ubuntu-24.04",
+      "dependsOn": [
+        "pkg:deb/debian/zlib1g@1:1.3.dfsg-3.1ubuntu2.1?arch=amd64\u0026distro=ubuntu-24.04",
+        "pkg:deb/debian/binutils-common@2.42-4ubuntu2.4?arch=amd64\u0026distro=ubuntu-24.04",
+        "pkg:deb/debian/libc6@2.39-0ubuntu8.4?arch=amd64\u0026distro=ubuntu-24.04",
+        "pkg:deb/debian/libgcc-s1@14.2.0-4ubuntu2~24.04?arch=amd64\u0026distro=ubuntu-24.04",
+        "pkg:deb/debian/libjansson4@2.14-2build2?arch=amd64\u0026distro=ubuntu-24.04",
+        "pkg:deb/debian/libctf0@2.42-4ubuntu2.4?arch=amd64\u0026distro=ubuntu-24.04",
+        "pkg:deb/debian/libgprofng0@2.42-4ubuntu2.4?arch=amd64\u0026distro=ubuntu-24.04",
+        "pkg:deb/debian/libstdc++6@14.2.0-4ubuntu2~24.04?arch=amd64\u0026distro=ubuntu-24.04",
+        "pkg:deb/debian/libzstd1@1.5.5+dfsg2-2build1.1?arch=amd64\u0026distro=ubuntu-24.04",
+        "pkg:deb/debian/libctf-nobfd0@2.42-4ubuntu2.4?arch=amd64\u0026distro=ubuntu-24.04",
+        "pkg:deb/debian/libsframe1@2.42-4ubuntu2.4?arch=amd64\u0026distro=ubuntu-24.04",
+        "pkg:deb/debian/libbinutils@2.42-4ubuntu2.4?arch=amd64\u0026distro=ubuntu-24.04"
+      ]
+    },
+    {
       "ref": "pkg:deb/debian/cpp-13-x86-64-linux-gnu@13.3.0-6ubuntu2~24.04?arch=amd64\u0026distro=ubuntu-24.04",
       "dependsOn": [
-        "pkg:deb/debian/gcc-13-base@13.3.0-6ubuntu2~24.04?arch=amd64\u0026distro=ubuntu-24.04",
         "pkg:deb/debian/libc6@2.39-0ubuntu8.4?arch=amd64\u0026distro=ubuntu-24.04",
         "pkg:deb/debian/libgmp10@2:6.3.0+dfsg-2ubuntu6?arch=amd64\u0026distro=ubuntu-24.04",
         "pkg:deb/debian/libisl23@0.26-3build1.1?arch=amd64\u0026distro=ubuntu-24.04",
         "pkg:deb/debian/libmpc3@1.3.1-1build1.1?arch=amd64\u0026distro=ubuntu-24.04",
         "pkg:deb/debian/libmpfr6@4.2.1-1build1.1?arch=amd64\u0026distro=ubuntu-24.04",
         "pkg:deb/debian/libzstd1@1.5.5+dfsg2-2build1.1?arch=amd64\u0026distro=ubuntu-24.04",
-        "pkg:deb/debian/zlib1g@1:1.3.dfsg-3.1ubuntu2.1?arch=amd64\u0026distro=ubuntu-24.04"
+        "pkg:deb/debian/zlib1g@1:1.3.dfsg-3.1ubuntu2.1?arch=amd64\u0026distro=ubuntu-24.04",
+        "pkg:deb/debian/gcc-13-base@13.3.0-6ubuntu2~24.04?arch=amd64\u0026distro=ubuntu-24.04"
       ]
     },
     {
-      "ref": "8664f851-ea34-4768-90ec-900ed9d51527",
+      "ref": "pkg:deb/debian/libgcc-13-dev@13.3.0-6ubuntu2~24.04?arch=amd64\u0026distro=ubuntu-24.04",
+      "dependsOn": [
+        "pkg:deb/debian/libquadmath0@14.2.0-4ubuntu2~24.04?arch=amd64\u0026distro=ubuntu-24.04",
+        "pkg:deb/debian/gcc-13-base@13.3.0-6ubuntu2~24.04?arch=amd64\u0026distro=ubuntu-24.04",
+        "pkg:deb/debian/libgcc-s1@14.2.0-4ubuntu2~24.04?arch=amd64\u0026distro=ubuntu-24.04",
+        "pkg:deb/debian/libgomp1@14.2.0-4ubuntu2~24.04?arch=amd64\u0026distro=ubuntu-24.04",
+        "pkg:deb/debian/libasan8@14.2.0-4ubuntu2~24.04?arch=amd64\u0026distro=ubuntu-24.04",
+        "pkg:deb/debian/libitm1@14.2.0-4ubuntu2~24.04?arch=amd64\u0026distro=ubuntu-24.04",
+        "pkg:deb/debian/libatomic1@14.2.0-4ubuntu2~24.04?arch=amd64\u0026distro=ubuntu-24.04",
+        "pkg:deb/debian/libtsan2@14.2.0-4ubuntu2~24.04?arch=amd64\u0026distro=ubuntu-24.04",
+        "pkg:deb/debian/libubsan1@14.2.0-4ubuntu2~24.04?arch=amd64\u0026distro=ubuntu-24.04",
+        "pkg:deb/debian/liblsan0@14.2.0-4ubuntu2~24.04?arch=amd64\u0026distro=ubuntu-24.04",
+        "pkg:deb/debian/libhwasan0@14.2.0-4ubuntu2~24.04?arch=amd64\u0026distro=ubuntu-24.04"
+      ]
+    },
+    {
+      "ref": "pkg:deb/debian/libpcre3-dev@2:8.39-15build1?arch=amd64\u0026distro=ubuntu-24.04",
+      "dependsOn": [
+        "pkg:deb/debian/libpcre16-3@2:8.39-15build1?arch=amd64\u0026distro=ubuntu-24.04",
+        "pkg:deb/debian/libpcre32-3@2:8.39-15build1?arch=amd64\u0026distro=ubuntu-24.04",
+        "pkg:deb/debian/libpcrecpp0v5@2:8.39-15build1?arch=amd64\u0026distro=ubuntu-24.04",
+        "pkg:deb/debian/libc6-dev@2.39-0ubuntu8.4?arch=amd64\u0026distro=ubuntu-24.04",
+        "pkg:deb/debian/libpcre3@2:8.39-15build1?arch=amd64\u0026distro=ubuntu-24.04"
+      ]
+    },
+    {
+      "ref": "pkg:deb/debian/zlib1g-dev@1:1.3.dfsg-3.1ubuntu2.1?arch=amd64\u0026distro=ubuntu-24.04",
+      "dependsOn": [
+        "pkg:deb/debian/zlib1g@1:1.3.dfsg-3.1ubuntu2.1?arch=amd64\u0026distro=ubuntu-24.04",
+        "pkg:deb/debian/libc6-dev@2.39-0ubuntu8.4?arch=amd64\u0026distro=ubuntu-24.04"
+      ]
+    },
+    {
+      "ref": "pkg:deb/debian/gcc-13-x86-64-linux-gnu@13.3.0-6ubuntu2~24.04?arch=amd64\u0026distro=ubuntu-24.04",
+      "dependsOn": [
+        "pkg:deb/debian/libgmp10@2:6.3.0+dfsg-2ubuntu6?arch=amd64\u0026distro=ubuntu-24.04",
+        "pkg:deb/debian/libgcc-13-dev@13.3.0-6ubuntu2~24.04?arch=amd64\u0026distro=ubuntu-24.04",
+        "pkg:deb/debian/libc6@2.39-0ubuntu8.4?arch=amd64\u0026distro=ubuntu-24.04",
+        "pkg:deb/debian/libstdc++6@14.2.0-4ubuntu2~24.04?arch=amd64\u0026distro=ubuntu-24.04",
+        "pkg:deb/debian/libzstd1@1.5.5+dfsg2-2build1.1?arch=amd64\u0026distro=ubuntu-24.04",
+        "pkg:deb/debian/binutils-x86-64-linux-gnu@2.42-4ubuntu2.4?arch=amd64\u0026distro=ubuntu-24.04",
+        "pkg:deb/debian/libisl23@0.26-3build1.1?arch=amd64\u0026distro=ubuntu-24.04",
+        "pkg:deb/debian/libcc1-0@14.2.0-4ubuntu2~24.04?arch=amd64\u0026distro=ubuntu-24.04",
+        "pkg:deb/debian/gcc-13-base@13.3.0-6ubuntu2~24.04?arch=amd64\u0026distro=ubuntu-24.04",
+        "pkg:deb/debian/libmpc3@1.3.1-1build1.1?arch=amd64\u0026distro=ubuntu-24.04",
+        "pkg:deb/debian/libgcc-s1@14.2.0-4ubuntu2~24.04?arch=amd64\u0026distro=ubuntu-24.04",
+        "pkg:deb/debian/zlib1g@1:1.3.dfsg-3.1ubuntu2.1?arch=amd64\u0026distro=ubuntu-24.04",
+        "pkg:deb/debian/libmpfr6@4.2.1-1build1.1?arch=amd64\u0026distro=ubuntu-24.04",
+        "pkg:deb/debian/cpp-13-x86-64-linux-gnu@13.3.0-6ubuntu2~24.04?arch=amd64\u0026distro=ubuntu-24.04"
+      ]
+    },
+    {
+      "ref": "740f33c6-d22f-4316-abb4-e73390f697dc",
       "dependsOn": [
         "pkg:deb/debian/libc6-dev@2.39-0ubuntu8.4?arch=amd64\u0026distro=ubuntu-24.04",
         "pkg:deb/debian/libcrypt-dev@1:4.4.36-4build1?arch=amd64\u0026distro=ubuntu-24.04",
@@ -698,55 +765,6 @@
         "pkg:deb/debian/binutils-x86-64-linux-gnu@2.42-4ubuntu2.4?arch=amd64\u0026distro=ubuntu-24.04",
         "pkg:deb/debian/cpp-13-x86-64-linux-gnu@13.3.0-6ubuntu2~24.04?arch=amd64\u0026distro=ubuntu-24.04",
         "pkg:deb/debian/gcc-13-x86-64-linux-gnu@13.3.0-6ubuntu2~24.04?arch=amd64\u0026distro=ubuntu-24.04"
-      ]
-    },
-    {
-      "ref": "pkg:deb/debian/libcrypt-dev@1:4.4.36-4build1?arch=amd64\u0026distro=ubuntu-24.04",
-      "dependsOn": [
-        "pkg:deb/debian/libcrypt1@1:4.4.36-4build1?arch=amd64\u0026distro=ubuntu-24.04"
-      ]
-    },
-    {
-      "ref": "pkg:deb/debian/zlib1g-dev@1:1.3.dfsg-3.1ubuntu2.1?arch=amd64\u0026distro=ubuntu-24.04",
-      "dependsOn": [
-        "pkg:deb/debian/zlib1g@1:1.3.dfsg-3.1ubuntu2.1?arch=amd64\u0026distro=ubuntu-24.04",
-        "pkg:deb/debian/libc6-dev@2.39-0ubuntu8.4?arch=amd64\u0026distro=ubuntu-24.04"
-      ]
-    },
-    {
-      "ref": "pkg:deb/debian/binutils-x86-64-linux-gnu@2.42-4ubuntu2.4?arch=amd64\u0026distro=ubuntu-24.04",
-      "dependsOn": [
-        "pkg:deb/debian/libbinutils@2.42-4ubuntu2.4?arch=amd64\u0026distro=ubuntu-24.04",
-        "pkg:deb/debian/libgcc-s1@14.2.0-4ubuntu2~24.04?arch=amd64\u0026distro=ubuntu-24.04",
-        "pkg:deb/debian/libstdc++6@14.2.0-4ubuntu2~24.04?arch=amd64\u0026distro=ubuntu-24.04",
-        "pkg:deb/debian/libgprofng0@2.42-4ubuntu2.4?arch=amd64\u0026distro=ubuntu-24.04",
-        "pkg:deb/debian/libzstd1@1.5.5+dfsg2-2build1.1?arch=amd64\u0026distro=ubuntu-24.04",
-        "pkg:deb/debian/binutils-common@2.42-4ubuntu2.4?arch=amd64\u0026distro=ubuntu-24.04",
-        "pkg:deb/debian/libctf0@2.42-4ubuntu2.4?arch=amd64\u0026distro=ubuntu-24.04",
-        "pkg:deb/debian/libsframe1@2.42-4ubuntu2.4?arch=amd64\u0026distro=ubuntu-24.04",
-        "pkg:deb/debian/zlib1g@1:1.3.dfsg-3.1ubuntu2.1?arch=amd64\u0026distro=ubuntu-24.04",
-        "pkg:deb/debian/libc6@2.39-0ubuntu8.4?arch=amd64\u0026distro=ubuntu-24.04",
-        "pkg:deb/debian/libctf-nobfd0@2.42-4ubuntu2.4?arch=amd64\u0026distro=ubuntu-24.04",
-        "pkg:deb/debian/libjansson4@2.14-2build2?arch=amd64\u0026distro=ubuntu-24.04"
-      ]
-    },
-    {
-      "ref": "pkg:deb/debian/gcc-13-x86-64-linux-gnu@13.3.0-6ubuntu2~24.04?arch=amd64\u0026distro=ubuntu-24.04",
-      "dependsOn": [
-        "pkg:deb/debian/binutils-x86-64-linux-gnu@2.42-4ubuntu2.4?arch=amd64\u0026distro=ubuntu-24.04",
-        "pkg:deb/debian/libmpc3@1.3.1-1build1.1?arch=amd64\u0026distro=ubuntu-24.04",
-        "pkg:deb/debian/zlib1g@1:1.3.dfsg-3.1ubuntu2.1?arch=amd64\u0026distro=ubuntu-24.04",
-        "pkg:deb/debian/gcc-13-base@13.3.0-6ubuntu2~24.04?arch=amd64\u0026distro=ubuntu-24.04",
-        "pkg:deb/debian/libgcc-13-dev@13.3.0-6ubuntu2~24.04?arch=amd64\u0026distro=ubuntu-24.04",
-        "pkg:deb/debian/libgcc-s1@14.2.0-4ubuntu2~24.04?arch=amd64\u0026distro=ubuntu-24.04",
-        "pkg:deb/debian/libc6@2.39-0ubuntu8.4?arch=amd64\u0026distro=ubuntu-24.04",
-        "pkg:deb/debian/libzstd1@1.5.5+dfsg2-2build1.1?arch=amd64\u0026distro=ubuntu-24.04",
-        "pkg:deb/debian/libcc1-0@14.2.0-4ubuntu2~24.04?arch=amd64\u0026distro=ubuntu-24.04",
-        "pkg:deb/debian/libgmp10@2:6.3.0+dfsg-2ubuntu6?arch=amd64\u0026distro=ubuntu-24.04",
-        "pkg:deb/debian/libmpfr6@4.2.1-1build1.1?arch=amd64\u0026distro=ubuntu-24.04",
-        "pkg:deb/debian/cpp-13-x86-64-linux-gnu@13.3.0-6ubuntu2~24.04?arch=amd64\u0026distro=ubuntu-24.04",
-        "pkg:deb/debian/libisl23@0.26-3build1.1?arch=amd64\u0026distro=ubuntu-24.04",
-        "pkg:deb/debian/libstdc++6@14.2.0-4ubuntu2~24.04?arch=amd64\u0026distro=ubuntu-24.04"
       ]
     }
   ]

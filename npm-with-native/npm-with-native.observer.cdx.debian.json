@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:5d649c60-7efa-4774-b24c-73c61a56f4b4",
+  "serialNumber": "urn:uuid:1181ba0e-da66-4e8f-9c7f-4ed976c37bf1",
   "version": 1,
   "metadata": {
-    "timestamp": "2025-03-20T16:03:21+00:00",
+    "timestamp": "2025-03-25T10:40:25+00:00",
     "lifecycles": [
       {
         "phase": "build"
@@ -45,7 +45,7 @@
       ]
     },
     "component": {
-      "bom-ref": "bd79501a-0acb-4cd1-b21d-722b202414fd",
+      "bom-ref": "a05bbca7-f783-44cd-aafb-f5284f81473f",
       "type": "application",
       "name": "npm-with-native-dependencies",
       "version": "1.0.0"
@@ -767,7 +767,7 @@
       "purl": "pkg:deb/debian/zlib1g@1:1.2.13.dfsg-1?arch=amd64\u0026distro=debian-12"
     },
     {
-      "bom-ref": "ca331c48-b488-4c53-ac96-70f577f0e647",
+      "bom-ref": "1fa36c5d-1509-495d-bbc9-aec12dcde680",
       "type": "application",
       "name": "package-lock.json"
     },
@@ -1601,54 +1601,87 @@
   ],
   "dependencies": [
     {
+      "ref": "pkg:deb/debian/gcc-12@12.2.0-14?arch=amd64\u0026distro=debian-12",
+      "dependsOn": [
+        "pkg:deb/debian/libgcc-12-dev@12.2.0-14?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/libisl23@0.25-1.1?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/libzstd1@1.5.4+dfsg2-5?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/cpp-12@12.2.0-14?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/libcc1-0@12.2.0-14?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/binutils@2.40-2?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/libc6@2.36-9+deb12u10?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/libmpc3@1.3.1-1?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/libstdc++6@12.2.0-14?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/libgmp10@2:6.2.1+dfsg1-1.1?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/libmpfr6@4.2.0-1?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/gcc-12-base@12.2.0-14?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/libgcc-s1@12.2.0-14?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/zlib1g@1:1.2.13.dfsg-1?arch=amd64\u0026distro=debian-12"
+      ]
+    },
+    {
+      "ref": "a05bbca7-f783-44cd-aafb-f5284f81473f",
+      "dependsOn": [
+        "pkg:deb/debian/libc6-dev@2.36-9+deb12u10?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/libgcc-12-dev@12.2.0-14?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/libstdc++-12-dev@12.2.0-14?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/linux-libc-dev@6.1.129-1?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/binutils-x86-64-linux-gnu@2.40-2?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/cpp-12@12.2.0-14?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/g++-12@12.2.0-14?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/gcc-12@12.2.0-14?arch=amd64\u0026distro=debian-12",
+        "1fa36c5d-1509-495d-bbc9-aec12dcde680"
+      ]
+    },
+    {
       "ref": "pkg:deb/debian/libc6-dev@2.36-9+deb12u10?arch=amd64\u0026distro=debian-12",
       "dependsOn": [
-        "pkg:deb/debian/libc-dev-bin@2.36-9+deb12u10?arch=amd64\u0026distro=debian-12",
-        "pkg:deb/debian/linux-libc-dev@6.1.129-1?arch=amd64\u0026distro=debian-12",
-        "pkg:deb/debian/libcrypt-dev@1:4.4.33-2?arch=amd64\u0026distro=debian-12",
         "pkg:deb/debian/libnsl-dev@1.3.0-2?arch=amd64\u0026distro=debian-12",
         "pkg:deb/debian/rpcsvc-proto@1.4.3-1?arch=amd64\u0026distro=debian-12",
-        "pkg:deb/debian/libc6@2.36-9+deb12u10?arch=amd64\u0026distro=debian-12"
+        "pkg:deb/debian/libc6@2.36-9+deb12u10?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/libc-dev-bin@2.36-9+deb12u10?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/linux-libc-dev@6.1.129-1?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/libcrypt-dev@1:4.4.33-2?arch=amd64\u0026distro=debian-12"
       ]
     },
     {
       "ref": "pkg:deb/debian/libgcc-12-dev@12.2.0-14?arch=amd64\u0026distro=debian-12",
       "dependsOn": [
+        "pkg:deb/debian/libasan8@12.2.0-14?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/libgcc-s1@12.2.0-14?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/liblsan0@12.2.0-14?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/libgomp1@12.2.0-14?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/libitm1@12.2.0-14?arch=amd64\u0026distro=debian-12",
         "pkg:deb/debian/libtsan2@12.2.0-14?arch=amd64\u0026distro=debian-12",
         "pkg:deb/debian/libubsan1@12.2.0-14?arch=amd64\u0026distro=debian-12",
-        "pkg:deb/debian/libasan8@12.2.0-14?arch=amd64\u0026distro=debian-12",
-        "pkg:deb/debian/libitm1@12.2.0-14?arch=amd64\u0026distro=debian-12",
         "pkg:deb/debian/libquadmath0@12.2.0-14?arch=amd64\u0026distro=debian-12",
-        "pkg:deb/debian/libgcc-s1@12.2.0-14?arch=amd64\u0026distro=debian-12",
-        "pkg:deb/debian/libgomp1@12.2.0-14?arch=amd64\u0026distro=debian-12",
         "pkg:deb/debian/gcc-12-base@12.2.0-14?arch=amd64\u0026distro=debian-12",
-        "pkg:deb/debian/libatomic1@12.2.0-14?arch=amd64\u0026distro=debian-12",
-        "pkg:deb/debian/liblsan0@12.2.0-14?arch=amd64\u0026distro=debian-12"
+        "pkg:deb/debian/libatomic1@12.2.0-14?arch=amd64\u0026distro=debian-12"
       ]
     },
     {
       "ref": "pkg:deb/debian/libstdc++-12-dev@12.2.0-14?arch=amd64\u0026distro=debian-12",
       "dependsOn": [
-        "pkg:deb/debian/gcc-12-base@12.2.0-14?arch=amd64\u0026distro=debian-12",
         "pkg:deb/debian/libgcc-12-dev@12.2.0-14?arch=amd64\u0026distro=debian-12",
         "pkg:deb/debian/libstdc++6@12.2.0-14?arch=amd64\u0026distro=debian-12",
-        "pkg:deb/debian/libc6-dev@2.36-9+deb12u10?arch=amd64\u0026distro=debian-12"
+        "pkg:deb/debian/libc6-dev@2.36-9+deb12u10?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/gcc-12-base@12.2.0-14?arch=amd64\u0026distro=debian-12"
       ]
     },
     {
       "ref": "pkg:deb/debian/binutils-x86-64-linux-gnu@2.40-2?arch=amd64\u0026distro=debian-12",
       "dependsOn": [
         "pkg:deb/debian/binutils-common@2.40-2?arch=amd64\u0026distro=debian-12",
-        "pkg:deb/debian/libbinutils@2.40-2?arch=amd64\u0026distro=debian-12",
-        "pkg:deb/debian/libc6@2.36-9+deb12u10?arch=amd64\u0026distro=debian-12",
-        "pkg:deb/debian/libjansson4@2.14-2?arch=amd64\u0026distro=debian-12",
         "pkg:deb/debian/zlib1g@1:1.2.13.dfsg-1?arch=amd64\u0026distro=debian-12",
         "pkg:deb/debian/libctf-nobfd0@2.40-2?arch=amd64\u0026distro=debian-12",
-        "pkg:deb/debian/libgcc-s1@12.2.0-14?arch=amd64\u0026distro=debian-12",
-        "pkg:deb/debian/libstdc++6@12.2.0-14?arch=amd64\u0026distro=debian-12",
-        "pkg:deb/debian/libzstd1@1.5.4+dfsg2-5?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/libbinutils@2.40-2?arch=amd64\u0026distro=debian-12",
         "pkg:deb/debian/libctf0@2.40-2?arch=amd64\u0026distro=debian-12",
-        "pkg:deb/debian/libgprofng0@2.40-2?arch=amd64\u0026distro=debian-12"
+        "pkg:deb/debian/libgprofng0@2.40-2?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/libjansson4@2.14-2?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/libstdc++6@12.2.0-14?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/libc6@2.36-9+deb12u10?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/libgcc-s1@12.2.0-14?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/libzstd1@1.5.4+dfsg2-5?arch=amd64\u0026distro=debian-12"
       ]
     },
     {
@@ -1667,53 +1700,20 @@
     {
       "ref": "pkg:deb/debian/g++-12@12.2.0-14?arch=amd64\u0026distro=debian-12",
       "dependsOn": [
-        "pkg:deb/debian/libisl23@0.25-1.1?arch=amd64\u0026distro=debian-12",
         "pkg:deb/debian/gcc-12-base@12.2.0-14?arch=amd64\u0026distro=debian-12",
-        "pkg:deb/debian/libmpc3@1.3.1-1?arch=amd64\u0026distro=debian-12",
-        "pkg:deb/debian/gcc-12@12.2.0-14?arch=amd64\u0026distro=debian-12",
-        "pkg:deb/debian/libc6@2.36-9+deb12u10?arch=amd64\u0026distro=debian-12",
         "pkg:deb/debian/zlib1g@1:1.2.13.dfsg-1?arch=amd64\u0026distro=debian-12",
-        "pkg:deb/debian/libgmp10@2:6.2.1+dfsg1-1.1?arch=amd64\u0026distro=debian-12",
-        "pkg:deb/debian/libmpfr6@4.2.0-1?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/libzstd1@1.5.4+dfsg2-5?arch=amd64\u0026distro=debian-12",
+        "pkg:deb/debian/gcc-12@12.2.0-14?arch=amd64\u0026distro=debian-12",
         "pkg:deb/debian/libstdc++-12-dev@12.2.0-14?arch=amd64\u0026distro=debian-12",
-        "pkg:deb/debian/libzstd1@1.5.4+dfsg2-5?arch=amd64\u0026distro=debian-12"
-      ]
-    },
-    {
-      "ref": "pkg:deb/debian/gcc-12@12.2.0-14?arch=amd64\u0026distro=debian-12",
-      "dependsOn": [
+        "pkg:deb/debian/libgmp10@2:6.2.1+dfsg1-1.1?arch=amd64\u0026distro=debian-12",
         "pkg:deb/debian/libmpc3@1.3.1-1?arch=amd64\u0026distro=debian-12",
-        "pkg:deb/debian/binutils@2.40-2?arch=amd64\u0026distro=debian-12",
         "pkg:deb/debian/libisl23@0.25-1.1?arch=amd64\u0026distro=debian-12",
         "pkg:deb/debian/libmpfr6@4.2.0-1?arch=amd64\u0026distro=debian-12",
-        "pkg:deb/debian/libstdc++6@12.2.0-14?arch=amd64\u0026distro=debian-12",
-        "pkg:deb/debian/gcc-12-base@12.2.0-14?arch=amd64\u0026distro=debian-12",
-        "pkg:deb/debian/libgcc-12-dev@12.2.0-14?arch=amd64\u0026distro=debian-12",
-        "pkg:deb/debian/libgcc-s1@12.2.0-14?arch=amd64\u0026distro=debian-12",
-        "pkg:deb/debian/cpp-12@12.2.0-14?arch=amd64\u0026distro=debian-12",
-        "pkg:deb/debian/libcc1-0@12.2.0-14?arch=amd64\u0026distro=debian-12",
-        "pkg:deb/debian/libc6@2.36-9+deb12u10?arch=amd64\u0026distro=debian-12",
-        "pkg:deb/debian/libgmp10@2:6.2.1+dfsg1-1.1?arch=amd64\u0026distro=debian-12",
-        "pkg:deb/debian/libzstd1@1.5.4+dfsg2-5?arch=amd64\u0026distro=debian-12",
-        "pkg:deb/debian/zlib1g@1:1.2.13.dfsg-1?arch=amd64\u0026distro=debian-12"
+        "pkg:deb/debian/libc6@2.36-9+deb12u10?arch=amd64\u0026distro=debian-12"
       ]
     },
     {
-      "ref": "bd79501a-0acb-4cd1-b21d-722b202414fd",
-      "dependsOn": [
-        "pkg:deb/debian/libc6-dev@2.36-9+deb12u10?arch=amd64\u0026distro=debian-12",
-        "pkg:deb/debian/libgcc-12-dev@12.2.0-14?arch=amd64\u0026distro=debian-12",
-        "pkg:deb/debian/libstdc++-12-dev@12.2.0-14?arch=amd64\u0026distro=debian-12",
-        "pkg:deb/debian/linux-libc-dev@6.1.129-1?arch=amd64\u0026distro=debian-12",
-        "pkg:deb/debian/binutils-x86-64-linux-gnu@2.40-2?arch=amd64\u0026distro=debian-12",
-        "pkg:deb/debian/cpp-12@12.2.0-14?arch=amd64\u0026distro=debian-12",
-        "pkg:deb/debian/g++-12@12.2.0-14?arch=amd64\u0026distro=debian-12",
-        "pkg:deb/debian/gcc-12@12.2.0-14?arch=amd64\u0026distro=debian-12",
-        "ca331c48-b488-4c53-ac96-70f577f0e647"
-      ]
-    },
-    {
-      "ref": "ca331c48-b488-4c53-ac96-70f577f0e647",
+      "ref": "1fa36c5d-1509-495d-bbc9-aec12dcde680",
       "dependsOn": [
         "pkg:npm/bcrypt@5.1.1",
         "pkg:npm/leftpad@0.0.1"

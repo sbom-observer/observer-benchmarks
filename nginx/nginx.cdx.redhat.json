@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:17d0aaf8-2a9f-459d-a771-72caf10a3df9",
+  "serialNumber": "urn:uuid:1614379d-95d6-4d70-ad6c-30c6994e8b69",
   "version": 1,
   "metadata": {
-    "timestamp": "2025-03-19T18:13:40+00:00",
+    "timestamp": "2025-03-25T10:28:52+00:00",
     "lifecycles": [
       {
         "phase": "build"
@@ -39,9 +39,9 @@
       ]
     },
     "component": {
-      "bom-ref": "23895c4c-00ca-4ca3-95c3-6700d02d4862",
+      "bom-ref": "6ef6ca4d-d5fc-44c9-8fc5-d33ea1aa9e77",
       "type": "application",
-      "name": ""
+      "name": "nginx-1.25.3"
     }
   },
   "components": [
@@ -58,22 +58,22 @@
         },
         {
           "license": {
-            "id": "GPL-3.0"
-          }
-        },
-        {
-          "license": {
-            "id": "GPL-3.0-or-later"
-          }
-        },
-        {
-          "license": {
             "id": "LGPL-2.1"
           }
         },
         {
           "license": {
             "id": "LGPL-3.0"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0-or-later"
           }
         }
       ],
@@ -99,11 +99,6 @@
       "name": "glibc-devel",
       "version": "2.34",
       "licenses": [
-        {
-          "license": {
-            "id": "LGPL-2.1"
-          }
-        },
         {
           "license": {
             "id": "ISC"
@@ -132,6 +127,11 @@
         {
           "license": {
             "id": "GPL-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1"
           }
         }
       ],
@@ -259,6 +259,12 @@
       "version": "2.35.2",
       "scope": "excluded",
       "purl": "pkg:rpm/fedora/binutils@2.35.2?arch=x86_64\u0026distro=rhel-9.5",
+      "properties": [
+        {
+          "name": "observer:build:role",
+          "value": "tool"
+        }
+      ],
       "components": [
         {
           "type": "file",
@@ -279,6 +285,12 @@
       "version": "11.5.0",
       "scope": "excluded",
       "purl": "pkg:rpm/fedora/cpp@11.5.0?arch=x86_64\u0026distro=rhel-9.5",
+      "properties": [
+        {
+          "name": "observer:build:role",
+          "value": "tool"
+        }
+      ],
       "components": [
         {
           "type": "file",
@@ -750,33 +762,6 @@
   ],
   "dependencies": [
     {
-      "ref": "pkg:rpm/fedora/gcc@11.5.0?arch=x86_64\u0026distro=rhel-9.5",
-      "dependsOn": [
-        "pkg:rpm/fedora/bash@5.1.8?arch=x86_64\u0026distro=rhel-9.5",
-        "pkg:rpm/fedora/binutils@2.35.2?arch=x86_64\u0026distro=rhel-9.5",
-        "pkg:rpm/fedora/cpp@11.5.0?arch=x86_64\u0026distro=rhel-9.5",
-        "pkg:rpm/fedora/glibc-devel@2.34?arch=x86_64\u0026distro=rhel-9.5",
-        "pkg:rpm/fedora/glibc@2.34?arch=x86_64\u0026distro=rhel-9.5",
-        "pkg:rpm/fedora/libgcc@11.5.0?arch=x86_64\u0026distro=rhel-9.5",
-        "pkg:rpm/fedora/gmp@6.2.0?arch=x86_64\u0026distro=rhel-9.5",
-        "pkg:rpm/fedora/libgomp@11.5.0?arch=x86_64\u0026distro=rhel-9.5",
-        "pkg:rpm/fedora/libmpc@1.2.1?arch=x86_64\u0026distro=rhel-9.5",
-        "pkg:rpm/fedora/mpfr@4.1.0?arch=x86_64\u0026distro=rhel-9.5",
-        "pkg:rpm/fedora/zlib@1.2.11?arch=x86_64\u0026distro=rhel-9.5",
-        "pkg:rpm/fedora/libzstd@1.5.1?arch=x86_64\u0026distro=rhel-9.5",
-        "pkg:rpm/fedora/make@4.3?arch=x86_64\u0026distro=rhel-9.5"
-      ]
-    },
-    {
-      "ref": "pkg:rpm/fedora/glibc-devel@2.34?arch=x86_64\u0026distro=rhel-9.5",
-      "dependsOn": [
-        "pkg:rpm/fedora/glibc@2.34?arch=x86_64\u0026distro=rhel-9.5",
-        "pkg:rpm/fedora/glibc-headers@2.34?arch=x86_64\u0026distro=rhel-9.5",
-        "pkg:rpm/fedora/kernel-headers@5.14.0?arch=x86_64\u0026distro=rhel-9.5",
-        "pkg:rpm/fedora/libxcrypt-devel@4.4.18?arch=x86_64\u0026distro=rhel-9.5"
-      ]
-    },
-    {
       "ref": "pkg:rpm/fedora/libxcrypt-devel@4.4.18?arch=x86_64\u0026distro=rhel-9.5",
       "dependsOn": [
         "pkg:rpm/fedora/pkgconf-pkg-config@1.7.3?arch=x86_64\u0026distro=rhel-9.5",
@@ -824,7 +809,7 @@
       ]
     },
     {
-      "ref": "23895c4c-00ca-4ca3-95c3-6700d02d4862",
+      "ref": "6ef6ca4d-d5fc-44c9-8fc5-d33ea1aa9e77",
       "dependsOn": [
         "pkg:rpm/fedora/gcc@11.5.0?arch=x86_64\u0026distro=rhel-9.5",
         "pkg:rpm/fedora/glibc-devel@2.34?arch=x86_64\u0026distro=rhel-9.5",
@@ -836,6 +821,33 @@
         "pkg:rpm/fedora/zlib-devel@1.2.11?arch=x86_64\u0026distro=rhel-9.5",
         "pkg:rpm/fedora/binutils@2.35.2?arch=x86_64\u0026distro=rhel-9.5",
         "pkg:rpm/fedora/cpp@11.5.0?arch=x86_64\u0026distro=rhel-9.5"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/fedora/gcc@11.5.0?arch=x86_64\u0026distro=rhel-9.5",
+      "dependsOn": [
+        "pkg:rpm/fedora/bash@5.1.8?arch=x86_64\u0026distro=rhel-9.5",
+        "pkg:rpm/fedora/binutils@2.35.2?arch=x86_64\u0026distro=rhel-9.5",
+        "pkg:rpm/fedora/cpp@11.5.0?arch=x86_64\u0026distro=rhel-9.5",
+        "pkg:rpm/fedora/glibc-devel@2.34?arch=x86_64\u0026distro=rhel-9.5",
+        "pkg:rpm/fedora/glibc@2.34?arch=x86_64\u0026distro=rhel-9.5",
+        "pkg:rpm/fedora/libgcc@11.5.0?arch=x86_64\u0026distro=rhel-9.5",
+        "pkg:rpm/fedora/gmp@6.2.0?arch=x86_64\u0026distro=rhel-9.5",
+        "pkg:rpm/fedora/libgomp@11.5.0?arch=x86_64\u0026distro=rhel-9.5",
+        "pkg:rpm/fedora/libmpc@1.2.1?arch=x86_64\u0026distro=rhel-9.5",
+        "pkg:rpm/fedora/mpfr@4.1.0?arch=x86_64\u0026distro=rhel-9.5",
+        "pkg:rpm/fedora/zlib@1.2.11?arch=x86_64\u0026distro=rhel-9.5",
+        "pkg:rpm/fedora/libzstd@1.5.1?arch=x86_64\u0026distro=rhel-9.5",
+        "pkg:rpm/fedora/make@4.3?arch=x86_64\u0026distro=rhel-9.5"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/fedora/glibc-devel@2.34?arch=x86_64\u0026distro=rhel-9.5",
+      "dependsOn": [
+        "pkg:rpm/fedora/glibc@2.34?arch=x86_64\u0026distro=rhel-9.5",
+        "pkg:rpm/fedora/glibc-headers@2.34?arch=x86_64\u0026distro=rhel-9.5",
+        "pkg:rpm/fedora/kernel-headers@5.14.0?arch=x86_64\u0026distro=rhel-9.5",
+        "pkg:rpm/fedora/libxcrypt-devel@4.4.18?arch=x86_64\u0026distro=rhel-9.5"
       ]
     },
     {

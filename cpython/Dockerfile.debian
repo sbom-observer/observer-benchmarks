@@ -1,0 +1,39 @@
+FROM observer-builder AS builder
+
+# Use a base image with necessary build tools
+FROM debian:12
+
+# Install dependencies
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    libpcre3 libpcre3-dev \
+    zlib1g zlib1g-dev \
+    libssl-dev \
+    wget \
+    curl \
+    pkg-config
+
+# install trivy
+# ENV TRIVY_VERSION=0.60.0
+# RUN wget https://github.com/aquasecurity/trivy/releases/download/v${TRIVY_VERSION}/trivy_${TRIVY_VERSION}_Linux-64bit.deb
+# RUN dpkg -i trivy_${TRIVY_VERSION}_Linux-64bit.deb
+
+# setup working directory
+WORKDIR /src
+
+# Download cpython source code
+ENV CPYTHON_VERSION=3.13.2
+RUN wget https://www.python.org/ftp/python/${CPYTHON_VERSION}/Python-${CPYTHON_VERSION}.tgz
+RUN wget https://www.python.org/ftp/python/${CPYTHON_VERSION}/Python-${CPYTHON_VERSION}.tgz.spdx.json
+RUN tar -xvf Python-${CPYTHON_VERSION}.tgz
+RUN mv Python-${CPYTHON_VERSION}.tgz.spdx.json cpython.official.spdx.json
+RUN cd Python-${CPYTHON_VERSION} && ./configure
+
+# install observer cli
+COPY --from=builder /src/observer-cli/observer /usr/local/bin/observer
+RUN chmod +x /usr/local/bin/observer
+
+WORKDIR /src/Python-${CPYTHON_VERSION}
+
+# create observer.yml
+RUN echo "component:\n  name: cpython\n  version: ${CPYTHON_VERSION}" > observer.yml
