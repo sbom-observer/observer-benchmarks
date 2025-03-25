@@ -1,0 +1,35 @@
+FROM observer-builder AS builder
+
+# Use a base image with necessary build tools
+FROM debian:12
+
+# Install dependencies
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    libpcre3 libpcre3-dev \
+    zlib1g zlib1g-dev \
+    libssl-dev \
+    wget \
+    curl \
+    pkg-config \
+    perl \
+    sed \
+    libncurses-dev
+
+# setup working directory
+WORKDIR /src
+
+# Download Erlang OTP source code
+ENV OTP_VERSION=27.3
+RUN wget -nv https://github.com/erlang/otp/releases/download/OTP-${OTP_VERSION}/otp_src_${OTP_VERSION}.tar.gz
+RUN tar -xvf otp_src_${OTP_VERSION}.tar.gz
+RUN cd otp_src_${OTP_VERSION} && ./configure
+
+# install observer cli
+COPY --from=builder /src/observer-cli/observer /usr/local/bin/observer
+RUN chmod +x /usr/local/bin/observer
+
+WORKDIR /src/otp_src_${OTP_VERSION}
+
+# create observer.yml
+RUN echo "component:\n  name: otp\n  version: ${OTP_VERSION}" > observer.yml
